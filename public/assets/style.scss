@@ -76,6 +76,7 @@ p {
       text-transform: capitalize;
       color: $secondary-color;
       padding-bottom: 40px;
+      text-shadow: 0 4px 4px rgba(253, 230, 62, 0.5);
     }
 
     h3 {
@@ -114,4 +115,695 @@ p {
     border: 1.5px solid #ffffff;
     border-radius: 12px;
   }
+}
+
+/*..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....SIGNIN page CSS style..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....*/
+
+.signin-section {
+  .hero-sign {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+      url("../assets/image/Hero.png");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container-sign {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .box-sign {
+    background-color: rgba(108, 52, 1, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px;
+    width: 80vh;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 33px;
+    padding: 50px 33px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .log-pg {
+      font-family: $font-family;
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 66px;
+      text-transform: uppercase;
+      color: $secondary-color;
+      padding-bottom: 60px;
+      text-shadow: 0 4px 4px rgba(253, 230, 62, 0.5);
+    }
+  }
+
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .input-label {
+    font-family: $btn-family;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .input-icon {
+    position: absolute;
+    top: 68%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 16px;
+  }
+
+  .input-field {
+    background-color: rgba(188, 108, 37, 0.2);
+    width: 73vh;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid rgba(188, 108, 37, 1) !important;
+    border-radius: 12px;
+    font-size: 16px;
+    &::placeholder {
+      font-family: $btn-family;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 23.4px;
+      color: #ffffff;
+    }
+    &:focus {
+      border-radius: 12px;
+      border-color: rgba(255, 255, 255, 0.6);
+      background-color: rgba(188, 108, 37, 0.33);
+    }
+  }
+
+  .eye-icon {
+    position: absolute;
+    top: 68%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  /* Bootstrap Grid Styling for Remember Me and Forgot Password */
+  // Parent container to hold both sections
+  .row {
+    display: flex;
+    justify-content: space-between; // This will ensure that the child elements are on opposite sides
+    align-items: center; // Vertically center the content
+    width: 100%;
+    padding: 20px 0 50px; // Add some padding to the left and right
+  }
+
+  // Remember Me Section (Left side)
+  .remember-me {
+    display: flex;
+    justify-content: flex-start; // Align the remember me toggle to the left
+    align-items: center; // Vertically center the content
+    color: #ffffff;
+  }
+
+  // Forgot Password Section (Right side)
+  .forgot-password {
+    display: flex;
+    justify-content: flex-end; // Align the forgot password link to the right
+    align-items: center; // Vertically center the content
+  }
+
+  // Label for Remember Me toggle
+  .remember-label {
+    font-size: 14px;
+    margin-left: 10px; // Space between toggle and label
+  }
+
+  // Forgot password link style
+  .forgot-link {
+    font-size: 14px;
+    color: #fde63e;
+    text-decoration: none; // Remove underline from the link
+    &:hover {
+      text-decoration: underline; // Underline on hover
+    }
+  }
+
+  // Toggle Switch Styling (for Remember Me)
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    border-radius: 50px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+  }
+
+  input:checked + .slider {
+    background-color: #34c759;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(14px);
+  }
+
+  .btn-1 {
+    width: 100%;
+    font-family: $btn-1-family;
+    font-weight: 700;
+    size: 20px;
+    line-height: 26px;
+    text-align: center;
+    background-color: $primary-color;
+    color: $text-white;
+    padding: 12px 100px;
+    border: 1.5px solid #ffffff;
+    border-radius: 12px;
+    margin-top: 10px;
+  }
+
+  /* Styling for Register Link */
+  .register-link {
+    font-size: 14px;
+    color: #ffffff;
+  }
+
+  .register-link a {
+    text-decoration: underline;
+    color: $secondary-color;
+  }
+
+  .register-link a:hover {
+    text-decoration: none;
+  }
+}
+
+/*..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....SIGNUP page CSS style..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....*/
+
+.signup-section {
+  .hero-signup {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+      url("../assets/image/Hero.png");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container-signup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .box-signup {
+    background-color: rgba(108, 52, 1, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px;
+    width: 80vh;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 33px;
+    padding: 50px 33px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .signup-pg {
+      font-family: $font-family;
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 66px;
+      text-transform: uppercase;
+      color: $secondary-color;
+      padding-bottom: 30px;
+      text-shadow: 0 4px 4px rgba(253, 230, 62, 0.5);
+    }
+  }
+
+  .form-group,
+  .input-container {
+    position: relative;
+    margin-bottom: 20px;
+
+    label {
+      font-family: $btn-family;
+      font-size: 1rem; /* Use relative units */
+      font-weight: 600;
+      line-height: 1.25rem;
+      letter-spacing: 1px;
+      color: #ffffff;
+      display: block;
+      margin-bottom: 5px;
+      cursor: pointer; /* Ensures labels are interactive */
+    }
+
+    input {
+      background-color: rgba(188, 108, 37, 0.2);
+      width: 100%;
+      padding: 10px 10px 10px 40px; /* Leave space for icons */
+      border: 1px solid rgba(188, 108, 37, 1);
+      border-radius: 12px;
+      font-size: 1rem;
+      color: #ffffff;
+
+      &::placeholder {
+        font-family: $btn-family;
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        color: #ffffff;
+      }
+
+      &:focus {
+        border-color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(188, 108, 37, 0.33);
+        outline: none;
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Optional focus effect */
+      }
+    }
+    .input-field {
+      background-color: rgba(188, 108, 37, 0.2);
+      width: 100%;
+      padding: 10px 10px 10px 40px; /* Leave space for icons */
+      border: 1px solid rgba(188, 108, 37, 1);
+      border-radius: 12px;
+      font-size: 1rem;
+      color: #ffffff;
+    }
+
+    .react-tel-input .flag-dropdown {
+      background-color: transparent;
+      // padding: 10px 10px 10px 40px;
+      border: 0;
+      &:hover {
+        background-color: transparent;
+        border: 0;
+      }
+    }
+
+    .input-icon {
+      position: absolute;
+      top: 33%;
+      left: 2%;
+      color: #ffffff;
+      font-size: 1rem;
+    }
+    .input-icon-1 {
+      position: absolute;
+      top: 33%;
+      left: 4%;
+      color: #ffffff;
+      font-size: 1rem;
+    }
+    .icon-input {
+      position: relative;
+    }
+
+    .eye-icon {
+      position: absolute;
+      top: 70%;
+      right: 25px;
+      transform: translateY(-50%);
+      color: #ffffff;
+      font-size: 1.125rem;
+      cursor: pointer;
+    }
+  }
+
+  /* Bootstrap Grid Styling for Remember Me and Forgot Password */
+  // Parent container to hold both sections
+  .row {
+    display: flex;
+    justify-content: space-between; // This will ensure that the child elements are on opposite sides
+    align-items: center; // Vertically center the content
+    width: 100%;
+    padding: 20px 0 30px; // Add some padding to the left and right
+  }
+
+  // Remember Me Section (Left side)
+  .remember-me {
+    display: flex;
+    justify-content: flex-start; // Align the remember me toggle to the left
+    align-items: center; // Vertically center the content
+    color: #ffffff;
+  }
+
+  // Forgot Password Section (Right side)
+  .forgot-password {
+    display: flex;
+    justify-content: flex-end; // Align the forgot password link to the right
+    align-items: center; // Vertically center the content
+  }
+
+  // Label for Remember Me toggle
+  .remember-label {
+    font-size: 14px;
+    margin-left: 10px; // Space between toggle and label
+  }
+
+  // Forgot password link style
+  .forgot-link {
+    font-size: 14px;
+    color: #fde63e;
+    text-decoration: none; // Remove underline from the link
+    &:hover {
+      text-decoration: underline; // Underline on hover
+    }
+  }
+
+  // Toggle Switch Styling (for Remember Me)
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    border-radius: 50px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+  }
+
+  input:checked + .slider {
+    background-color: #34c759;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(14px);
+  }
+
+  .btn-1 {
+    width: 100%;
+    font-family: $btn-1-family;
+    font-weight: 700;
+    size: 20px;
+    line-height: 26px;
+    text-align: center;
+    background-color: $primary-color;
+    color: $text-white;
+    padding: 12px 100px;
+    border: 1.5px solid #ffffff;
+    border-radius: 12px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  /* Styling for Register Link */
+  .register-link {
+    font-size: 14px;
+    color: #ffffff;
+
+    a {
+      text-decoration: underline;
+      color: $secondary-color;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.headings {
+  color: #ffffff;
+}
+
+.headings h1 {
+  align-items: center;
+}
+
+/*..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....Otp page CSS style..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....*/
+
+.otp-section {
+  padding: 0;
+  .hero-otp {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+      url("../assets/image/Hero.png");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container-otp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .box-otp {
+    background-color: rgba(108, 52, 1, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px;
+    width: 70vh;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 33px;
+    padding: 50px 33px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .otp-pg {
+      font-family: $font-family;
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 66px;
+      text-transform: uppercase;
+      color: $secondary-color;
+      padding-bottom: 30px;
+      text-shadow: 0 4px 4px rgba(253, 230, 62, 0.5);
+    }
+  }
+
+  /* Bootstrap Grid Styling for Remember Me and Forgot Password */
+  // Parent container to hold both sections
+  .row {
+    display: flex;
+    justify-content: space-between; // This will ensure that the child elements are on opposite sides
+    align-items: center; // Vertically center the content
+    width: 100%;
+    padding: 20px 0 30px; // Add some padding to the left and right
+  }
+
+  .btn-otp {
+    width: 75%; /* Adjusted width to 60% for a more balanced button size */
+    max-width: 100%; /* Restricting max width to prevent the button from being too wide */
+    font-family: $btn-1-family;
+    font-weight: 700;
+    font-size: 20px; /* Corrected 'size' to 'font-size' */
+    line-height: 26px;
+    background-color: $primary-color;
+    color: $text-white;
+    padding: 12px 20px; /* Adjusted padding to make the button more consistent */
+    border: 1.5px solid #ffffff;
+    border-radius: 12px;
+    margin: 10px auto 30px; /* 'auto' for horizontal margin centers the button */
+    display: flex;
+    justify-content: center; /* Ensures content (text) is centered */
+    text-align: center; /* Centers the button text */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+  }
+
+  .btn-otp:hover {
+    background-color: #e56b00; /* Button color change on hover */
+  }
+
+  /* Styling for Register Link */
+  .register-link {
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: capitalize;
+
+    a {
+      text-decoration: underline;
+      color: $secondary-color;
+      text-transform: capitalize;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.otp-field-container {
+  padding: 33px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.otp-field {
+  width: 82px;
+  height: 82px;
+  margin: 10px;
+  text-align: center;
+  font-size: 24px;
+  border: 2px solid #bc6c25;
+  border-radius: 15px;
+  background-color: #bc6c2533;
+  color: #ffffff;
+  // gap: 15px;
+  &::placeholder {
+    font-family: $btn-family;
+    font-size: 33px;
+    font-weight: 700;
+    color: $text-white;
+  }
+}
+
+.otp-field:focus {
+  border-color: #ffffff;
+  outline: none;
+}
+
+.hero-otp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-otp {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 8px;
+  width: 40%;
+  max-width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.otp-pg {
+  color: #fff;
+  text-align: center;
+}
+
+/*..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....Verification page CSS style..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....*/
+
+.verify-section {
+  padding: 0;
+  .hero-verify {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+      url("../assets/image/Hero.png");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container-verify {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .box-verify {
+    background-color: rgba(108, 52, 1, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px;
+    width: 70vh;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 33px;
+    padding: 50px 33px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .verify-pg {
+      font-family: $font-family;
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 66px;
+      // text-transform: capitalize;
+      color: $secondary-color;
+      padding-bottom: 30px;
+      text-shadow: 0 4px 4px rgba(253, 230, 62, 0.5);
+    }
+  }
+  .verify-pg span {
+    text-transform: capitalize;
+  }
+}
+
+.verify1-pg {
+  color: #fde63e;
+  text-align: center;
+}
+
+img {
+  width: 60%;
+  margin: 20px 0 50px; /* Space around the image */
 }
