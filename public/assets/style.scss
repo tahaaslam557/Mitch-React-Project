@@ -807,3 +807,175 @@ img {
   width: 60%;
   margin: 20px 0 50px; /* Space around the image */
 }
+
+/*..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....Subscription Plan page CSS style..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....*/
+
+.sub-plan-section {
+  .sub-hero {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+      url("../assets/image/Hero.png");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .box-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .box {
+    background-color: rgba(108, 52, 1, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 33px;
+    padding: 50px 33px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-family: $font-family;
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 66px;
+      text-transform: capitalize;
+      color: $secondary-color;
+      padding-bottom: 40px;
+      text-shadow: 0 4px 4px rgba(253, 230, 62, 0.5);
+    }
+
+    h3 {
+      font-family: "Special Elite", "outfit";
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 66px;
+      letter-spacing: 2px;
+      text-transform: capitalize;
+      color: $heading-color;
+      padding-bottom: 40px;
+      text-align: center;
+    }
+  }
+  .log-btn {
+    font-family: $btn-family;
+    font-weight: 700;
+    size: 20px;
+    line-height: 26px;
+    align-items: center;
+    background-color: $button-background;
+    color: $text-color;
+    padding: 12px 100px;
+    border: 1.5px solid #bc6c25;
+    border-radius: 12px;
+  }
+  .btn-1 {
+    font-family: $btn-1-family;
+    font-weight: 700;
+    size: 20px;
+    line-height: 26px;
+    align-items: center;
+    background-color: $primary-color;
+    color: $text-white;
+    padding: 12px 100px;
+    border: 1.5px solid #ffffff;
+    border-radius: 12px;
+  }
+  .btn-2 {
+    font-family: $btn-1-family;
+    font-weight: 700;
+    size: 20px;
+    line-height: 26px;
+    align-items: center;
+    background-color: rgba(108, 52, 1, 0.2);
+    color: $text-white;
+    padding: 12px 100px;
+    border: 1.5px solid #ffffff;
+    border-radius: 12px;
+    text-transform: capitalize;
+  }
+  .sub-plan-heading {
+    p {
+      color: rgba(253, 230, 62, 1);
+      font-weight: 700;
+      font-size: 44px;
+      font-family: $btn-family;
+      line-height: 57px;
+    }
+  }
+
+  .icon-times {
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+    svg {
+      fill: rgba(253, 230, 62, 1);
+      width: 25px;
+      height: 25px;
+      border: 1px solid rgba(188, 108, 37, 1);
+      color: rgba(188, 108, 37, 1);
+      padding: 0.5rem;
+      border-radius: 10px;
+    }
+  }
+  .box-under {
+    background-color: rgba(108, 52, 1, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 25px;
+    padding: 5px 33px 40px;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+  }
+  .heading-sub {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    .package-name {
+      color: rgba(253, 230, 62, 1);
+      font-size: 30px; /* Default size */
+      line-height: 57.9px;
+      font-weight: 400;
+      font-family: $font-family;
+      text-transform: capitalize;
+    }
+
+    p {
+      color: rgba(253, 230, 62, 1);
+      font-family: $font-family;
+      font-size: 30px;
+    }
+  }
+}
+
+.box-under1 {
+  background-color: rgba(108, 52, 1, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 20px;
+  width: 96.5%;
+  // height: auto;
+  margin: 20px;
+  border-radius: 25px;
+  padding: 10px 33px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.point {
+  color: white;
+}

@@ -8,6 +8,8 @@ import Signin from './Components/Frontend/signin'
 import "../public/assets/style.scss"
 import Otp from './Components/Otp'
 import Verification from './Components/Frontend/Verification'
+import Subscriptionplan from './Components/Frontend/Subscriptionplan'
+import Payment from './Components/Frontend/Payment'
 
 
 export default function App() {
@@ -20,6 +22,8 @@ export default function App() {
         <Route path="/signin" element={<Signin/>}/>
         <Route path="/otp" element={<Otp/>}/>
         <Route path="/otp-verified" element={<Verification/>}/>
+        <Route path="/subplans" element={<Subscriptionplan/>}/>
+        <Route path="/payment" element={<Payment/>}/>
     </Routes>
     </BrowserRouter>
     </>
