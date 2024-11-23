@@ -9,6 +9,7 @@ $button-background: #ffffff;
 $font-family: "CustomFont";
 $btn-family: "Sarabun";
 $btn-1-family: "Sarabun";
+$To-Pay: #BC6C2533;
 
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
@@ -28,12 +29,15 @@ body {
 h1 {
   font-size: 4rem;
 }
+
 h2 {
   font-size: 3rem;
 }
+
 h3 {
   font-size: 1.5rem;
 }
+
 p {
   font-size: 1rem;
 }
@@ -46,6 +50,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .container {
     position: absolute;
     top: 50%;
@@ -91,6 +96,7 @@ p {
       text-align: center;
     }
   }
+
   .log-btn {
     font-family: $btn-family;
     font-weight: 700;
@@ -103,6 +109,7 @@ p {
     border: 1.5px solid #bc6c25;
     border-radius: 12px;
   }
+
   .btn-1 {
     font-family: $btn-1-family;
     font-weight: 700;
@@ -121,12 +128,14 @@ p {
 
 .signin-section {
   .hero-sign {
+    width: 100%;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
       url("../assets/image/Hero.png");
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .container-sign {
     position: absolute;
     top: 50%;
@@ -194,6 +203,7 @@ p {
     border: 1px solid rgba(188, 108, 37, 1) !important;
     border-radius: 12px;
     font-size: 16px;
+
     &::placeholder {
       font-family: $btn-family;
       font-size: 18px;
@@ -201,6 +211,7 @@ p {
       line-height: 23.4px;
       color: #ffffff;
     }
+
     &:focus {
       border-radius: 12px;
       border-color: rgba(255, 255, 255, 0.6);
@@ -254,6 +265,7 @@ p {
     font-size: 14px;
     color: #fde63e;
     text-decoration: none; // Remove underline from the link
+
     &:hover {
       text-decoration: underline; // Underline on hover
     }
@@ -297,11 +309,11 @@ p {
     transition: 0.4s;
   }
 
-  input:checked + .slider {
+  input:checked+.slider {
     background-color: #34c759;
   }
 
-  input:checked + .slider:before {
+  input:checked+.slider:before {
     transform: translateX(14px);
   }
 
@@ -342,10 +354,12 @@ p {
   .hero-signup {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
       url("../assets/image/Hero.png");
+    width: 100%;
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .container-signup {
     position: absolute;
     top: 50%;
@@ -387,20 +401,23 @@ p {
 
     label {
       font-family: $btn-family;
-      font-size: 1rem; /* Use relative units */
+      font-size: 1rem;
+      /* Use relative units */
       font-weight: 600;
       line-height: 1.25rem;
       letter-spacing: 1px;
       color: #ffffff;
       display: block;
       margin-bottom: 5px;
-      cursor: pointer; /* Ensures labels are interactive */
+      cursor: pointer;
+      /* Ensures labels are interactive */
     }
 
     input {
       background-color: rgba(188, 108, 37, 0.2);
       width: 100%;
-      padding: 10px 10px 10px 40px; /* Leave space for icons */
+      padding: 10px 10px 10px 40px;
+      /* Leave space for icons */
       border: 1px solid rgba(188, 108, 37, 1);
       border-radius: 12px;
       font-size: 1rem;
@@ -418,13 +435,16 @@ p {
         border-color: rgba(255, 255, 255, 0.6);
         background-color: rgba(188, 108, 37, 0.33);
         outline: none;
-        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Optional focus effect */
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        /* Optional focus effect */
       }
     }
+
     .input-field {
       background-color: rgba(188, 108, 37, 0.2);
       width: 100%;
-      padding: 10px 10px 10px 40px; /* Leave space for icons */
+      padding: 10px 10px 10px 40px;
+      /* Leave space for icons */
       border: 1px solid rgba(188, 108, 37, 1);
       border-radius: 12px;
       font-size: 1rem;
@@ -435,6 +455,7 @@ p {
       background-color: transparent;
       // padding: 10px 10px 10px 40px;
       border: 0;
+
       &:hover {
         background-color: transparent;
         border: 0;
@@ -448,6 +469,7 @@ p {
       color: #ffffff;
       font-size: 1rem;
     }
+
     .input-icon-1 {
       position: absolute;
       top: 33%;
@@ -455,6 +477,7 @@ p {
       color: #ffffff;
       font-size: 1rem;
     }
+
     .icon-input {
       position: relative;
     }
@@ -506,6 +529,7 @@ p {
     font-size: 14px;
     color: #fde63e;
     text-decoration: none; // Remove underline from the link
+
     &:hover {
       text-decoration: underline; // Underline on hover
     }
@@ -549,11 +573,11 @@ p {
     transition: 0.4s;
   }
 
-  input:checked + .slider {
+  input:checked+.slider {
     background-color: #34c759;
   }
 
-  input:checked + .slider:before {
+  input:checked+.slider:before {
     transform: translateX(14px);
   }
 
@@ -581,6 +605,7 @@ p {
     a {
       text-decoration: underline;
       color: $secondary-color;
+
       &:hover {
         text-decoration: none;
       }
@@ -600,13 +625,16 @@ p {
 
 .otp-section {
   padding: 0;
+
   .hero-otp {
+    width: 100%;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
       url("../assets/image/Hero.png");
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .container-otp {
     position: absolute;
     top: 50%;
@@ -652,27 +680,36 @@ p {
   }
 
   .btn-otp {
-    width: 75%; /* Adjusted width to 60% for a more balanced button size */
-    max-width: 100%; /* Restricting max width to prevent the button from being too wide */
+    width: 75%;
+    /* Adjusted width to 60% for a more balanced button size */
+    max-width: 100%;
+    /* Restricting max width to prevent the button from being too wide */
     font-family: $btn-1-family;
     font-weight: 700;
-    font-size: 20px; /* Corrected 'size' to 'font-size' */
+    font-size: 20px;
+    /* Corrected 'size' to 'font-size' */
     line-height: 26px;
     background-color: $primary-color;
     color: $text-white;
-    padding: 12px 20px; /* Adjusted padding to make the button more consistent */
+    padding: 12px 20px;
+    /* Adjusted padding to make the button more consistent */
     border: 1.5px solid #ffffff;
     border-radius: 12px;
-    margin: 10px auto 30px; /* 'auto' for horizontal margin centers the button */
+    margin: 10px auto 30px;
+    /* 'auto' for horizontal margin centers the button */
     display: flex;
-    justify-content: center; /* Ensures content (text) is centered */
-    text-align: center; /* Centers the button text */
+    justify-content: center;
+    /* Ensures content (text) is centered */
+    text-align: center;
+    /* Centers the button text */
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth hover transition */
+    transition: background-color 0.3s ease;
+    /* Smooth hover transition */
   }
 
   .btn-otp:hover {
-    background-color: #e56b00; /* Button color change on hover */
+    background-color: #e56b00;
+    /* Button color change on hover */
   }
 
   /* Styling for Register Link */
@@ -685,6 +722,7 @@ p {
       text-decoration: underline;
       color: $secondary-color;
       text-transform: capitalize;
+
       &:hover {
         text-decoration: none;
       }
@@ -710,6 +748,7 @@ p {
   border-radius: 15px;
   background-color: #bc6c2533;
   color: #ffffff;
+
   // gap: 15px;
   &::placeholder {
     font-family: $btn-family;
@@ -748,13 +787,16 @@ p {
 
 .verify-section {
   padding: 0;
+
   .hero-verify {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
       url("../assets/image/Hero.png");
+    width: 100%;
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .container-verify {
     position: absolute;
     top: 50%;
@@ -793,6 +835,7 @@ p {
       text-shadow: 0 4px 4px rgba(253, 230, 62, 0.5);
     }
   }
+
   .verify-pg span {
     text-transform: capitalize;
   }
@@ -805,7 +848,8 @@ p {
 
 img {
   width: 60%;
-  margin: 20px 0 50px; /* Space around the image */
+  margin: 20px 0 50px;
+  /* Space around the image */
 }
 
 /*..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....Subscription Plan page CSS style..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....*/
@@ -814,10 +858,12 @@ img {
   .sub-hero {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
       url("../assets/image/Hero.png");
+    width: 100%;
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .box-div {
     position: absolute;
     top: 50%;
@@ -863,6 +909,7 @@ img {
       text-align: center;
     }
   }
+
   .log-btn {
     font-family: $btn-family;
     font-weight: 700;
@@ -875,6 +922,7 @@ img {
     border: 1.5px solid #bc6c25;
     border-radius: 12px;
   }
+
   .btn-1 {
     font-family: $btn-1-family;
     font-weight: 700;
@@ -887,6 +935,7 @@ img {
     border: 1.5px solid #ffffff;
     border-radius: 12px;
   }
+
   .btn-2 {
     font-family: $btn-1-family;
     font-weight: 700;
@@ -900,6 +949,7 @@ img {
     border-radius: 12px;
     text-transform: capitalize;
   }
+
   .sub-plan-heading {
     p {
       color: rgba(253, 230, 62, 1);
@@ -914,6 +964,7 @@ img {
     display: flex;
     justify-content: end;
     cursor: pointer;
+
     svg {
       fill: rgba(253, 230, 62, 1);
       width: 25px;
@@ -924,6 +975,7 @@ img {
       border-radius: 10px;
     }
   }
+
   .box-under {
     background-color: rgba(108, 52, 1, 0.2);
     backdrop-filter: blur(20px);
@@ -936,18 +988,19 @@ img {
     padding: 5px 33px 40px;
     display: flex;
     flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
   }
+
   .heading-sub {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-items: center;
+
     .package-name {
       color: rgba(253, 230, 62, 1);
-      font-size: 30px; /* Default size */
+      font-size: 30px;
+      /* Default size */
       line-height: 57.9px;
       font-weight: 400;
       font-family: $font-family;
@@ -968,7 +1021,6 @@ img {
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0px 0px 20px;
   width: 96.5%;
-  // height: auto;
   margin: 20px;
   border-radius: 25px;
   padding: 10px 33px 40px;
@@ -978,4 +1030,645 @@ img {
 
 .point {
   color: white;
+}
+
+.point {
+  position: relative;
+  /* Create a positioning context for child elements */
+  font-size: 16px;
+  /* Set the font size for the text */
+  line-height: 1.5;
+  /* Align text vertically */
+  padding-left: 22px;
+  /* Add space to the left for the image */
+}
+
+.point img {
+  position: absolute;
+  /* Position the image relative to the container */
+  top: 0;
+  /* Align vertically */
+  left: 0;
+  /* Position the image on the left side */
+  transform: translateY(-100%);
+  /* Adjust for proper vertical centering */
+  width: 15px;
+  /* Set a fixed width */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+/*..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....Payment page CSS style..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....*/
+
+
+
+.payment-plan-section {
+  hr {
+    color: #fff;
+  }
+
+  .payment-hero {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+      url("../assets/image/Hero.png");
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .box-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .box {
+    background-color: rgba(108, 52, 1, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px;
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 33px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+
+
+  button.back-btn {
+    border: 1.5px solid $primary-color;
+    background-color: transparent;
+    color: $primary-color;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  h2 {
+    font-family: $btn-1-family;
+    color: rgba(253, 230, 62, 1);
+    margin: 0;
+    font-weight: 700;
+    font-family: 44px;
+    text-transform: capitalize;
+  }
+
+  img {
+    max-width: 100%;
+    /* Ensures responsive image */
+    height: auto;
+  }
+
+  .icon-times {
+    display: flex;
+    justify-content: start;
+    cursor: pointer;
+
+    svg {
+      fill: rgba(253, 230, 62, 1);
+      width: 25px;
+      height: 25px;
+      border: 1px solid rgba(188, 108, 37, 1);
+      color: rgba(188, 108, 37, 1);
+      padding: 0.5rem;
+      border-radius: 10px;
+    }
+  }
+
+  .icon-times2 {
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+
+    img {
+      width: 30%;
+      // border: 1px solid rgba(255, 255, 255, 1);
+      padding: 0.5rem;
+      border-radius: 10px;
+    }
+  }
+
+  .st-h {
+    h6 {
+      font-family: $btn-family;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 28px;
+      color: $text-white;
+      text-transform: capitalize;
+    }
+  }
+
+  .btn-card {
+    font-size: 18px;
+    font-family: $btn-family;
+    font-weight: 700;
+    line-height: 23px;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: none;
+    color: $text-white;
+    border: 1.5px solid #fff;
+    background-color: #FFFFFF1F;
+    border-radius: 20px;
+    padding: 10px;
+    svg{
+      margin-right: 5px;
+      margin-top: -5px;
+    }
+
+    &:hover {
+      border: 1.5px solid #fff;
+      background-color: #FFF;
+      color: #000;
+    }
+  }
+
+  .total-py {
+    font-size: 26px;
+    font-family: $btn-family;
+    font-weight: 600;
+    line-height: 33px;
+    text-transform: capitalize;
+    color: $text-white;
+    margin-top: 20px;
+  }
+
+  .sub-total {
+    font-size: 22px;
+    font-family: $btn-family;
+    font-weight: 500;
+    line-height: 28px;
+    color: $text-white;
+  }
+
+  .sub-price {
+    font-size: 22px;
+    font-family: $btn-family;
+    font-weight: 500;
+    line-height: 28px;
+    color: $text-white;
+    text-align: right;
+  }
+
+  .btn-1 {
+    font-family: $btn-1-family;
+    font-weight: 700;
+    size: 20px;
+    line-height: 26px;
+    text-decoration: none;
+    align-items: center;
+    background-color: $To-Pay;
+    color: $text-white;
+    padding: 12px 100px;
+    border: 1.5px solid #ffffff;
+    border-radius: 12px;
+
+    &:hover {
+      background-color: $primary-color;
+    }
+
+    a {
+      text-decoration: none;
+      color: $text-white;
+      text-transform: capitalize;
+    }
+  }
+}
+
+
+
+/*..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X..... STRIPE CARD page CSS style..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....*/
+
+
+
+
+.Stripe-section {
+  hr {
+    color: #fff;
+  }
+
+  .Stripe-hero {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), #000000A8),
+      url("../assets/image/Hero.png");
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .box-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .box {
+    background-color: rgba(108, 52, 1, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px;
+    width: 45%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 33px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+
+
+  button.back-btn {
+    border: 1.5px solid $primary-color;
+    background-color: transparent;
+    color: $primary-color;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  h2 {
+    font-family: $btn-1-family;
+    color: rgba(253, 230, 62, 1);
+    margin: 0;
+    font-weight: 700;
+    font-family: 44px;
+    text-transform: capitalize;
+  }
+
+  .icon-times {
+    display: flex;
+    justify-content: start;
+    cursor: pointer;
+
+    svg {
+      fill: rgba(253, 230, 62, 1);
+      width: 25px;
+      height: 25px;
+      border: 1px solid rgba(188, 108, 37, 1);
+      color: rgba(188, 108, 37, 1);
+      padding: 0.5rem;
+      border-radius: 10px;
+    }
+  }
+
+  .icon-times2 {
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+
+    img {
+      width: 40%;
+      // border: 1px solid rgba(255, 255, 255, 1);
+      padding: 0.5rem;
+      border-radius: 10px;
+    }
+  }
+
+  .st-h {
+    h6 {
+      font-family: $btn-family;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 31px;
+      color: $text-white;
+      text-transform: capitalize;
+    }
+  }
+  .btn-1 {
+    font-family: $btn-1-family;
+    font-weight: 700;
+    size: 20px;
+    line-height: 26px;
+    text-decoration: none;
+    align-items: center;
+    background-color: $primary-color;
+    color: $text-white;
+    padding: 12px 100px;
+    border: 1.5px solid #ffffff;
+    border-radius: 12px;
+    margin-top: 60px;
+
+    &:hover {
+      background-color: $To-Pay;
+    }
+
+    a {
+      text-decoration: none;
+      color: $text-white;
+      text-transform: capitalize;
+    }
+  }
+  .form-group{
+    .input-label {
+      font-family: $btn-family;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      color: #ffffff;
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      margin-top: 40px;
+    }
+  .input-field {
+      background-color: rgba(188, 108, 37, 0.2);
+      width: 100%;
+      padding: 10px 10px 10px 40px;
+      border: 1px solid rgba(188, 108, 37, 1) !important;
+      border-radius: 12px;
+      font-size: 16px;
+  
+      &::placeholder {
+        font-family: $btn-family;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 23.4px;
+        color: #D6D6D6;
+      }
+  
+      &:focus {
+        border-radius: 12px;
+        border-color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(188, 108, 37, 0.33);
+      }
+    }
+  }
+}
+
+
+
+/*..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X..... Payment Confrim page CSS style..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....*/
+
+
+
+
+.payment-confrim-section {
+  hr {
+    color: #fff;
+  }
+
+  .payment-confrim-hero {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+      url("../assets/image/Hero.png");
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .box-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .box {
+    background-color: rgba(108, 52, 1, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px;
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 33px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+
+
+  button.back-btn {
+    border: 1.5px solid $primary-color;
+    background-color: transparent;
+    color: $primary-color;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  h2 {
+    font-family: $btn-1-family;
+    color: rgba(253, 230, 62, 1);
+    margin: 0;
+    font-weight: 700;
+    font-family: 44px;
+    text-transform: capitalize;
+  }
+
+  img {
+    max-width: 100%;
+    /* Ensures responsive image */
+    height: auto;
+  }
+
+  .icon-times {
+    display: flex;
+    justify-content: start;
+    cursor: pointer;
+
+    svg {
+      fill: rgba(253, 230, 62, 1);
+      width: 25px;
+      height: 25px;
+      border: 1px solid rgba(188, 108, 37, 1);
+      color: rgba(188, 108, 37, 1);
+      padding: 0.5rem;
+      border-radius: 10px;
+    }
+  }
+
+  .icon-times2 {
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+
+    img {
+      width: 30%;
+      // border: 1px solid rgba(255, 255, 255, 1);
+      padding: 0.5rem;
+      border-radius: 10px;
+    }
+  }
+
+  .st-h {
+    h6 {
+      font-family: $btn-family;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 28px;
+      color: $text-white;
+      text-transform: capitalize;
+    }
+  }
+
+  .btn-card {
+    font-size: 18px;
+    font-family: $btn-family;
+    font-weight: 700;
+    line-height: 23px;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: none;
+    color: $text-white;
+    border: 1.5px solid #fff;
+    background-color: #FFFFFF1F;
+    border-radius: 20px;
+    padding: 10px;
+    svg{
+      margin-right: 5px;
+      margin-top: -5px;
+    }
+
+    &:hover {
+      border: 1.5px solid #fff;
+      background-color: #FFF;
+      color: #000;
+    }
+  }
+
+  .total-py {
+    font-size: 26px;
+    font-family: $btn-family;
+    font-weight: 600;
+    line-height: 33px;
+    text-transform: capitalize;
+    color: $text-white;
+    margin-top: 20px;
+  }
+
+  .sub-total {
+    font-size: 22px;
+    font-family: $btn-family;
+    font-weight: 500;
+    line-height: 28px;
+    color: $text-white;
+  }
+
+  .sub-price {
+    font-size: 22px;
+    font-family: $btn-family;
+    font-weight: 500;
+    line-height: 28px;
+    color: $text-white;
+    text-align: right;
+  }
+
+  .btn-1 {
+    font-family: $btn-1-family;
+    font-weight: 700;
+    size: 20px;
+    line-height: 26px;
+    text-decoration: none;
+    align-items: center;
+    background-color: $primary-color;
+    color: $text-white;
+    padding: 12px 100px;
+    border: 1.5px solid #ffffff;
+    border-radius: 12px;
+
+    &:hover {
+      background-color: $To-Pay;
+      transition: ease-out 0.5s;
+    }
+
+    a {
+      text-decoration: none;
+      color: $text-white;
+      text-transform: capitalize;
+    }
+  }
+
+  .pay-select{
+    border: 1.5px solid $primary-color;
+    height: 80px;
+    margin-top: 30px;
+    padding: 40px 0 0;
+    border-radius: 10px;
+    
+    // align-items: center; /* Vertically centers the content */
+    img{
+      // position:absolute;
+      // transform: translateY(-30%);
+      display: flex; /* Enables flexbox */
+      justify-content: center; /* Horizontally centers the content */
+      width: 80%;
+      height: auto;
+      margin-top: -34px;
+      margin-left: 10px;
+    }
+    h6{
+      font-family: $btn-family;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 22px;
+      color: $text-white;
+      margin-top: -28px;
+      margin-left: -10px;
+    }
+    .radio-inpur{
+      appearance: none; /* Remove default styling */
+      width: 20px; /* Adjust size */
+      height: 20px;
+      border: 2px solid #FDE63E; /* Yellow border */
+      border-radius: 50%; /* Makes it circular */
+      background-color: transparent; /* Transparent center */
+      outline: none; /* Removes focus outline */
+      cursor: pointer; /* Pointer cursor on hover */
+      position: relative;
+      top: -10px;
+    }
+    
+    .radio-inpur:checked::before {
+      content: "";
+      display: block;
+      width: 50%; /* Inner circle size */
+      height: 50%;
+      background-color: #FDE63E; /* Transparent center */
+      border-radius: 50%; /* Inner circle is circular */
+      margin: auto; /* Center the inner circle */
+      position: relative;
+      top: 04px;
+    }
+  }
 }

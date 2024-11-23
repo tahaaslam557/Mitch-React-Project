@@ -2,6 +2,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import { faTimes } from "@fortawesome/free-solid-svg-icons"; // Import the icon
+import icon from "../../../public/assets/SVG/circle-check.png"
 
 function Subscriptionplan() {
   return (
@@ -34,10 +35,11 @@ function Subscriptionplan() {
                       </p>
                     </div>
                     <p className="point">
-                      <input type="checkbox" />7 days free trail
+                      <img src={icon} alt="" className="" />
+                      7 days free trail
                     </p>
                     <p className="point">
-                      <input type="checkbox" />
+                    <img src={icon} alt="" className="" />
                       20 generation per month
                     </p>
                     <button className="btn-1">proceed</button>
@@ -52,10 +54,10 @@ function Subscriptionplan() {
                       </p>
                     </div>
                     <p className="point">
-                      <input type="checkbox" />7 days free trail
+                    <img src={icon} alt="" className="" />7 days free trail
                     </p>
                     <p className="point">
-                      <input type="checkbox" />
+                    <img src={icon} alt="" className="" />
                       45 generation per month
                     </p>
                     <button className="btn-1">proceed</button>
@@ -70,15 +72,15 @@ function Subscriptionplan() {
                     </p>
                   </div>
                   <p className="point">
-                    <input type="checkbox" />
+                  <img src={icon} alt="" className="" />
                     00 days free trial
                   </p>
                   <p className="point">
-                    <input type="checkbox" />
+                  <img src={icon} alt="" className="" />
                     00 generation per month
                   </p>
                   <p className="point">
-                    <input type="checkbox" />
+                  <img src={icon} alt="" className="" />
                     00 audio generations
                   </p>
                   <button className="btn-2">comming soon</button>

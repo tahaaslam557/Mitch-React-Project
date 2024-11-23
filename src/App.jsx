@@ -10,6 +10,8 @@ import Otp from './Components/Otp'
 import Verification from './Components/Frontend/Verification'
 import Subscriptionplan from './Components/Frontend/Subscriptionplan'
 import Payment from './Components/Frontend/Payment'
+import Add_Stripe_card from './Components/Frontend/Add_Stripe_card'
+import Payment_confirm from './Components/Frontend/Payment_confirm'
 
 
 export default function App() {
@@ -24,6 +26,8 @@ export default function App() {
         <Route path="/otp-verified" element={<Verification/>}/>
         <Route path="/subplans" element={<Subscriptionplan/>}/>
         <Route path="/payment" element={<Payment/>}/>
+        <Route path="/stripe-card" element={<Add_Stripe_card/>}/>
+        <Route path="/payment-confirm" element={<Payment_confirm/>}/>
     </Routes>
     </BrowserRouter>
     </>
