@@ -130,7 +130,7 @@ p {
   .hero-sign {
     width: 100%;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
-      url("../assets/image/Hero.png");
+      url("../assets/image/Hero_2.png");
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -353,7 +353,7 @@ p {
 .signup-section {
   .hero-signup {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
-      url("../assets/image/Hero.png");
+      url("../assets/image/Hero_2.png");
     width: 100%;
     min-height: 100vh;
     background-repeat: no-repeat;
@@ -629,7 +629,7 @@ p {
   .hero-otp {
     width: 100%;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
-      url("../assets/image/Hero.png");
+      url("../assets/image/Hero_2.png");
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -790,7 +790,7 @@ p {
 
   .hero-verify {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
-      url("../assets/image/Hero.png");
+      url("../assets/image/Hero_2.png");
     width: 100%;
     min-height: 100vh;
     background-repeat: no-repeat;
@@ -857,7 +857,7 @@ img {
 .sub-plan-section {
   .sub-hero {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
-      url("../assets/image/Hero.png");
+      url("../assets/image/Hero_2.png");
     width: 100%;
     min-height: 100vh;
     background-repeat: no-repeat;
@@ -1069,7 +1069,7 @@ img {
 
   .payment-hero {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
-      url("../assets/image/Hero.png");
+      url("../assets/image/Hero_2.png");
     width: 100%;
     min-height: 100vh;
     background-repeat: no-repeat;
@@ -1186,7 +1186,8 @@ img {
     background-color: #FFFFFF1F;
     border-radius: 20px;
     padding: 10px;
-    svg{
+
+    svg {
       margin-right: 5px;
       margin-top: -5px;
     }
@@ -1264,7 +1265,7 @@ img {
 
   .Stripe-hero {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8), #000000A8),
-      url("../assets/image/Hero.png");
+      url("../assets/image/Hero_2.png");
     width: 100%;
     min-height: 100vh;
     background-repeat: no-repeat;
@@ -1361,6 +1362,7 @@ img {
       text-transform: capitalize;
     }
   }
+
   .btn-1 {
     font-family: $btn-1-family;
     font-weight: 700;
@@ -1385,7 +1387,8 @@ img {
       text-transform: capitalize;
     }
   }
-  .form-group{
+
+  .form-group {
     .input-label {
       font-family: $btn-family;
       font-size: 16px;
@@ -1399,14 +1402,15 @@ img {
       margin-bottom: 5px;
       margin-top: 40px;
     }
-  .input-field {
+
+    .input-field {
       background-color: rgba(188, 108, 37, 0.2);
       width: 100%;
       padding: 10px 10px 10px 40px;
       border: 1px solid rgba(188, 108, 37, 1) !important;
       border-radius: 12px;
       font-size: 16px;
-  
+
       &::placeholder {
         font-family: $btn-family;
         font-size: 18px;
@@ -1414,7 +1418,7 @@ img {
         line-height: 23.4px;
         color: #D6D6D6;
       }
-  
+
       &:focus {
         border-radius: 12px;
         border-color: rgba(255, 255, 255, 0.6);
@@ -1438,7 +1442,7 @@ img {
 
   .payment-confrim-hero {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
-      url("../assets/image/Hero.png");
+      url("../assets/image/Hero_2.png");
     width: 100%;
     min-height: 100vh;
     background-repeat: no-repeat;
@@ -1555,7 +1559,8 @@ img {
     background-color: #FFFFFF1F;
     border-radius: 20px;
     padding: 10px;
-    svg{
+
+    svg {
       margin-right: 5px;
       margin-top: -5px;
     }
@@ -1619,25 +1624,28 @@ img {
     }
   }
 
-  .pay-select{
+  .pay-select {
     border: 1.5px solid $primary-color;
     height: 80px;
     margin-top: 30px;
     padding: 40px 0 0;
     border-radius: 10px;
-    
+
     // align-items: center; /* Vertically centers the content */
-    img{
+    img {
       // position:absolute;
       // transform: translateY(-30%);
-      display: flex; /* Enables flexbox */
-      justify-content: center; /* Horizontally centers the content */
+      display: flex;
+      /* Enables flexbox */
+      justify-content: center;
+      /* Horizontally centers the content */
       width: 80%;
       height: auto;
       margin-top: -34px;
       margin-left: 10px;
     }
-    h6{
+
+    h6 {
       font-family: $btn-family;
       font-size: 18px;
       font-weight: 700;
@@ -1646,29 +1654,302 @@ img {
       margin-top: -28px;
       margin-left: -10px;
     }
-    .radio-inpur{
-      appearance: none; /* Remove default styling */
-      width: 20px; /* Adjust size */
+
+    .radio-inpur {
+      appearance: none;
+      /* Remove default styling */
+      width: 20px;
+      /* Adjust size */
       height: 20px;
-      border: 2px solid #FDE63E; /* Yellow border */
-      border-radius: 50%; /* Makes it circular */
-      background-color: transparent; /* Transparent center */
-      outline: none; /* Removes focus outline */
-      cursor: pointer; /* Pointer cursor on hover */
+      border: 2px solid #FDE63E;
+      /* Yellow border */
+      border-radius: 50%;
+      /* Makes it circular */
+      background-color: transparent;
+      /* Transparent center */
+      outline: none;
+      /* Removes focus outline */
+      cursor: pointer;
+      /* Pointer cursor on hover */
       position: relative;
       top: -10px;
     }
-    
+
     .radio-inpur:checked::before {
       content: "";
       display: block;
-      width: 50%; /* Inner circle size */
+      width: 50%;
+      /* Inner circle size */
       height: 50%;
-      background-color: #FDE63E; /* Transparent center */
-      border-radius: 50%; /* Inner circle is circular */
-      margin: auto; /* Center the inner circle */
+      background-color: #FDE63E;
+      /* Transparent center */
+      border-radius: 50%;
+      /* Inner circle is circular */
+      margin: auto;
+      /* Center the inner circle */
       position: relative;
       top: 04px;
     }
   }
+}
+
+
+
+/*..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X..... Payment_Successfull page CSS style..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....*/
+
+
+
+.successful-section {
+  padding: 0;
+
+  .hero-successful {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+      url("../assets/image/Hero_2.png");
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .container-successful {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .box-successful {
+    background-color: rgba(108, 52, 1, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px;
+    width: 70vh;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 33px;
+    padding: 50px 33px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .successful-pg {
+      font-family: $font-family;
+      font-size: 55px;
+      font-weight: 400;
+      line-height: 72px;
+      // text-transform: capitalize;
+      color: $secondary-color;
+      padding-bottom: 30px;
+      text-shadow: 0 4px 4px rgba(253, 230, 62, 0.5);
+    }
+
+    img {
+      width: 50%;
+      text-align: center;
+      /* Space around the  image */
+    }
+  }
+
+  .successful_1-pg {
+    font-family: $btn-family;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 57px;
+    text-transform: capitalize;
+    text-align: center;
+    color: $secondary-color;
+  }
+
+  .headings_1 {
+    font-family: $btn-family;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 29px;
+    text-transform: capitalize;
+    color: $text-white;
+  }
+}
+
+
+
+/*..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X..... Login_inner page CSS style..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....*/
+
+
+
+.login-inner-section {
+  padding: 0;
+
+  .hero-login-inner {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+      url("../assets/image/Hero_2.png");
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-login-inner {
+    width: 1374px;
+    height: 785px;
+    padding: 30px 33px;
+    border-radius: 33px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    text-align: center;
+    font-family: $font-family;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 66px;
+    text-transform: capitalize;
+    color: $primary-color;
+    text-shadow: 0 4px 4px rgba(253, 230, 62, 0.5);
+  }
+
+  .category-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .field-label {
+    font-family: $btn-family;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+    text-transform: capitalize;
+    color: #4D4D4D;
+    margin-bottom: 10px;
+  }
+
+  .category-button {
+    font-family: $btn-family;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    padding: 6px 20px;
+    background-color: rgba(188, 108, 37, 0.078);
+    border: 2px solid #BC6C25;
+    border-radius: 33px;
+    cursor: pointer;
+    color: #BC6C25;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #BC6C25;
+      color: #fff;
+    }
+
+    &.selected {
+      background-color: #BC6C25;
+      color: #fff;
+    }
+  }
+
+  .input-box {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #BC6C251F;
+    border: 1px solid #BBBBBB80;
+    /* Semi-transparent border */
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    /* Apply blur effect */
+    resize: vertical;
+    /* Allows resizing vertically */
+    transition: border-color 0.3s ease;
+
+    ::placeholder {
+      font-family: $btn-family;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 23px;
+      color: #4D4D4D;
+    }
+
+    /* Smooth transition for hover/focus */
+    &:focus {
+      border-color: #BBBBBB !important;
+      /* Slightly darker border on focus */
+    }
+  }
+
+  .field-label {
+    font-family: $btn-family;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: $primary-color;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .character-counter {
+    font-family: $btn-family;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: right;
+    color: $primary-color;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .btn-1 {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BC6C25; /* Green background */
+    color: white; /* White text */
+    font-size: 18px; /* Font size */
+    font-weight: bold;
+    padding: 12px 20px; /* Padding for button */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    position: relative; /* To position the SVG inside the button */
+    transition: background-color 0.3s ease-in-out; /* Smooth hover transition */
+  }
+  
+  .btn-1:hover {
+    color: #BC6C25; /* Text color changes on hover */
+    background-color: rgba(188, 108, 37, 0.2); /* Background darkens on hover */
+    border: 1px solid #BC6C25; /* Border color on hover */
+  }
+  
+  .btn-1 svg {
+    position: absolute;
+    left: 43.6%; /* Adjust SVG position */
+    top: 50%;
+    transform: translate(-50%, -50%); /* Centers SVG */
+    width: 20px; /* SVG size */
+    height: 21px;
+    transition: fill 0.3s ease; /* Smooth transition for SVG color */
+  }
+  
+  /* Apply hover effect to SVG */
+  .btn-1:hover svg {
+    fill: #BC6C25; /* Change SVG color to match the button on hover */
+  }
+  
+  
+
 }

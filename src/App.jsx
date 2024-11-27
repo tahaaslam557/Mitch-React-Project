@@ -12,6 +12,8 @@ import Subscriptionplan from './Components/Frontend/Subscriptionplan'
 import Payment from './Components/Frontend/Payment'
 import Add_Stripe_card from './Components/Frontend/Add_Stripe_card'
 import Payment_confirm from './Components/Frontend/Payment_confirm'
+import Payment_successfull from './Components/Frontend/payment_successfull'
+import Login_inner from './Components/Frontend/login_inner'
 
 
 export default function App() {
@@ -28,6 +30,8 @@ export default function App() {
         <Route path="/payment" element={<Payment/>}/>
         <Route path="/stripe-card" element={<Add_Stripe_card/>}/>
         <Route path="/payment-confirm" element={<Payment_confirm/>}/>
+        <Route path="/payment-success" element={<Payment_successfull/>}/>
+        <Route path="/login-inner" element={<Login_inner/>}/>
     </Routes>
     </BrowserRouter>
     </>
