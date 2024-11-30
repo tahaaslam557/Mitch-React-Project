@@ -4,8 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import Image2 from "../../../public/assets/image/stripe.png";
 import Image from "../../../public/assets/image/brown.png";
+import { useNavigate } from "react-router-dom";
+
 
 function Payment() {
+  const navigate = useNavigate();
+
   return (
     <>
       <section className="payment-plan-section">
@@ -37,7 +41,7 @@ function Payment() {
                   {" "}
                   <img src={Image2} />{" "}
                 </div>
-                <a href="#" className="btn-card">
+                <button className="btn-card" onClick={() => navigate("/stripe-card")}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -50,10 +54,10 @@ function Payment() {
                     <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
                   </svg>
                   add stripe card
-                </a>
+                </button>
                 <h3 className="total-py">total payable amount</h3>
                 <hr />
-                <div className="row">
+                <div className="row ">
                   <div className="col-md-6 sub-total">
                     <p>Subtotal</p>
                   </div>
@@ -78,7 +82,7 @@ function Payment() {
                     <p>$ 0.00</p>
                   </div>
                 </div>
-                <button className="btn-1"><a href="#">proceed to pay</a></button>
+                <button className="btn-1" onClick={() => navigate("/stripe-card")}>proceed to pay</button>
               </div>
             </div>
           </div>

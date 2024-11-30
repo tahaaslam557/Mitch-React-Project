@@ -1,8 +1,23 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React, { useEffect } from "react";
 import verifyImage from "../../../public/assets/image/verify.png"; // Adjust the path based on your project structure
+import { useNavigate } from "react-router-dom";
+
 
 function Verification() {
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Redirect to /subplans after 5 seconds
+    const timer = setTimeout(() => {
+      navigate("/subplans");
+    }, 2000);
+
+    // Cleanup the timeout on component unmount
+    return () => clearTimeout(timer);
+  }, [navigate]);
+
   return (
     <>
       <section className="verify-section">

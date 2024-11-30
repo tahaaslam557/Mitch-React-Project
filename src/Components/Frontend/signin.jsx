@@ -7,8 +7,10 @@ import {
   faEye,
   faEyeSlash,
 } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 function Signin() {
+  const navigate = useNavigate();
   const [passwordVisible, setPasswordVisible] = useState(false);
   const [rememberMe, setRememberMe] = useState(false);
 
@@ -104,13 +106,15 @@ function Signin() {
 
               {/* Submit Button */}
               <div className="col-lg-12 col-md-12 col-sm-12">
-                <button className="btn-1">login</button>
+                <button className="btn-1" onClick={() => navigate("/login-inner")}>
+                  login
+                </button>
               </div>
 
               {/* Register Link */}
               <div className="text-center mt-3">
                 <p className="register-link">
-                  Don&apos;t have an account? <a href="/register">Register</a>
+                  Don&apos;t have an account? <a href="/signup">Register</a>
                 </p>
               </div>
             </div>

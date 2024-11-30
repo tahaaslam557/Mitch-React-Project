@@ -1,8 +1,21 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React, { useEffect } from "react";
+
 import verifyimg from "../../../public/assets/image/verify_2.png";
+import { useNavigate } from "react-router-dom";
 
 function Payment_successfull() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Redirect to /subplans after 5 seconds
+    const timer = setTimeout(() => {
+      navigate("/login-inner");
+    }, 2000);
+
+    // Cleanup the timeout on component unmount
+    return () => clearTimeout(timer);
+  }, [navigate]);
   return (
     <>
       <section className="successful-section">

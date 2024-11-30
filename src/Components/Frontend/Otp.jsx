@@ -1,7 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Otp() {
+  const navigate = useNavigate();
   const [otp, setOtp] = useState(["", "", "", ""]); // Assuming OTP length is 4 digits
 
   // Handle OTP input change
@@ -23,6 +25,9 @@ function Otp() {
   const handleSubmit = () => {
     console.log("OTP Submitted: ", otp.join(""));
     // Add logic to verify OTP here
+
+    // Navigate to another page upon successful verification
+    navigate("/otp-verified");
   };
 
   return (
@@ -55,13 +60,15 @@ function Otp() {
             </div>
 
             <div className="col-lg-12 col-md-12 col-sm-12">
-              <button className="btn-otp" onClick={handleSubmit}>verify</button>
+              <button className="btn-otp" onClick={handleSubmit}>
+                Verify
+              </button>
             </div>
 
             {/* Register Link */}
             <div className="text-center mt-3">
               <p className="register-link">
-              didn&apos;t receive the email? <a href="/register">resend</a>
+                didn&apos;t receive the email? <a href="/register">resend</a>
               </p>
             </div>
           </div>

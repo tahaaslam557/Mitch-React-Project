@@ -3,7 +3,10 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import Image from "../../../public/assets/image/brown.png";
+import { useNavigate } from "react-router-dom";
+
 function Add_Stripe_card() {
+  const navigate = useNavigate();
   return (
     <>
       <section className="Stripe-section">
@@ -91,9 +94,7 @@ function Add_Stripe_card() {
                     </div>
                   </div>
                 </div>
-                <button className="btn-1">
-                  <a href="#">proceed to pay</a>
-                </button>
+                <button className="btn-1" onClick={() => navigate("/payment-confirm")}>proceed to pay</button>
               </div>
             </div>
           </div>

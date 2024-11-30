@@ -3,6 +3,7 @@ import { React, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "react-phone-input-2/lib/style.css"; // Import the CSS file
 import PhoneInput from "react-phone-input-2";
+import { useNavigate } from "react-router-dom";
 
 import {
   faEnvelope,
@@ -13,6 +14,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 function Signup() {
+  const navigate = useNavigate();
   const [passwordVisible, setShowPassword, showPassword] = useState(false);
   const [rememberMe, setRememberMe] = useState(false);
 
@@ -154,13 +156,13 @@ function Signup() {
 
               {/* Submit Button */}
               <div className="col-lg-12 col-md-12 col-sm-12">
-                <button className="btn-1">login</button>
+                <button className="btn-1"  onClick={() => navigate("/otp")}>Sign Up</button>
               </div>
 
               {/* Register Link */}
               <div className="text-center mt-3">
                 <p className="register-link">
-                  Don&apos;t have an account? <a href="/register">Register</a>
+                already have an account? <a href="/signin">login</a>
                 </p>
               </div>
             </div>

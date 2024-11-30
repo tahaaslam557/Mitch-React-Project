@@ -3,8 +3,12 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import { faTimes } from "@fortawesome/free-solid-svg-icons"; // Import the icon
 import icon from "../../../public/assets/SVG/circle-check.png"
+import { useNavigate } from "react-router-dom";
+
 
 function Subscriptionplan() {
+  const navigate = useNavigate();
+
   return (
     <>
       <section className="sub-plan-section">
@@ -42,7 +46,7 @@ function Subscriptionplan() {
                     <img src={icon} alt="" className="" />
                       20 generation per month
                     </p>
-                    <button className="btn-1">proceed</button>
+                    <button className="btn-1" onClick={() => navigate("/payment")}>proceed</button>
                   </div>
                 </div>
                 <div className="col-md-6">
@@ -60,7 +64,7 @@ function Subscriptionplan() {
                     <img src={icon} alt="" className="" />
                       45 generation per month
                     </p>
-                    <button className="btn-1">proceed</button>
+                    <button className="btn-1" onClick={() => navigate("/payment")}>proceed</button>
                   </div>
                 </div>
 

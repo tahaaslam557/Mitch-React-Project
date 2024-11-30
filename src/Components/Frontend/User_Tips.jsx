@@ -1,227 +1,78 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useState } from "react";
+import React from "react";
+import img from "../../../public/assets/image/tip_blub.png";
 import { useNavigate } from "react-router-dom";
 
-function Login_inner() {
+function User_Tips() {
   const navigate = useNavigate();
-
-  const [selectedCategory1, setSelectedCategory1] = useState(null);
-  const [selectedCategory2, setSelectedCategory2] = useState(null);
-  const [selectedCategory3, setSelectedCategory3] = useState(null); // State for third selector
-
-  const categories1 = [
-    { id: 1, label: "0-4" },
-    { id: 2, label: "5-8" },
-    { id: 3, label: "9-14" },
-  ];
-
-  const categories2 = [
-    { id: 1, label: "Mystery" },
-    { id: 2, label: "Action Adventure" },
-    { id: 3, label: "Western" },
-    { id: 4, label: "Sci-Fi" },
-    { id: 5, label: "Fantasy" },
-    { id: 6, label: "Comedy" },
-  ];
-
-  const categories3 = [
-    { id: 1, label: "Happy" },
-    { id: 2, label: "Sad" },
-    { id: 3, label: "Hopeful" },
-    { id: 4, label: "Bleak" },
-    { id: 5, label: "Triumphant" },
-    { id: 6, label: "Unexpected" },
-    { id: 7, label: "Peaceful" },
-    { id: 8, label: "Funny" },
-  ];
-
-  const handleSelect1 = (category) => setSelectedCategory1(category);
-  const handleSelect2 = (category) => setSelectedCategory2(category);
-  const handleSelect3 = (category) => setSelectedCategory3(category);
-
-  const [characterDescription, setCharacterDescription] = useState("");
-
-  const handleInputChange = (event) => {
-    setCharacterDescription(event.target.value);
-  };
-  const [settingDescription, setSettingDescription] = useState("");
 
   return (
     <>
-      <section className="login-inner-section">
-        <div className="hero-login-inner">
+      <div className="tip-section">
+        <div className="tip-hero">
           <div className="section">
-            <div className="container-login-inner">
-              <h1>Story Generator</h1>
-
-              <div className="container">
-                <div className="row">
-                  {/* First Selector */}
-                  <div className="col-md-4">
-                    <div className="form-group">
-                      <label
-                        htmlFor="category-buttons-1"
-                        className="field-label"
-                      >
-                        Select Age Range
-                      </label>
-                      <div
-                        id="category-buttons-1"
-                        className="category-container"
-                      >
-                        {categories1.map((category) => (
-                          <button
-                            key={category.id}
-                            onClick={() => handleSelect1(category.label)}
-                            className={`category-button ${
-                              selectedCategory1 === category.label
-                                ? "selected"
-                                : ""
-                            }`}
-                            aria-label={category.label}
-                          >
-                            {category.label}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Second Selector */}
-                  <div className="col-md-8">
-                    <div className="form-group">
-                      <label
-                        htmlFor="category-buttons-2"
-                        className="field-label"
-                      >
-                        Select Genre
-                      </label>
-                      <div
-                        id="category-buttons-2"
-                        className="category-container"
-                      >
-                        {categories2.map((category) => (
-                          <button
-                            key={category.id}
-                            onClick={() => handleSelect2(category.label)}
-                            className={`category-button ${
-                              selectedCategory2 === category.label
-                                ? "selected"
-                                : ""
-                            }`}
-                            aria-label={category.label}
-                          >
-                            {category.label}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Input Box for Character Description */}
-                <div className="form-group">
-                  <div className="row">
-                    <div className="col-md-6">
-                      <label
-                        htmlFor="character-description"
-                        className="field-label"
-                      >
-                        Describe the main character:
-                      </label>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="character-counter">
-                        {characterDescription.length} / 500 characters
-                      </div>
-                    </div>
-                  </div>
-                  <textarea
-                    id="character-description"
-                    className="input-box"
-                    placeholder="Enter character details here..."
-                    value={characterDescription}
-                    onChange={handleInputChange}
-                  ></textarea>
-                </div>
-
-                {/* Third Selector */}
-                <div className="form-group">
-                  <label htmlFor="category-buttons-3" className="field-label">
-                    Select Ending
-                  </label>
-                  <div id="category-buttons-3" className="category-container">
-                    {categories3.map((category) => (
-                      <button
-                        key={category.id}
-                        onClick={() => handleSelect3(category.label)}
-                        className={`category-button ${
-                          selectedCategory3 === category.label ? "selected" : ""
-                        }`}
-                        aria-label={category.label}
-                      >
-                        {category.label}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-                {/* Input Box for Character Description */}
-                {/* Second Message Box */}
-                <div className="form-group">
-                  <div className="row">
-                    <div className="col-md-6">
-                      <label
-                        htmlFor="setting-description"
-                        className="field-label"
-                      >
-                        Describe the setting:
-                      </label>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="character-counter">
-                        {settingDescription.length} / 500 characters
-                      </div>
-                    </div>
-                  </div>
-                  <textarea
-                    id="setting-description"
-                    className="input-box"
-                    placeholder="Enter Ending details here..."
-                    value={settingDescription}
-                    onChange={(e) => setSettingDescription(e.target.value)}
-                  ></textarea>
-                </div>
-
-                {/* Button to Generate Story */}
-                <div className="form-group">
-                  <div className="row">
-                    <div className="col-md-12">
-                      <button type="submit" className="btn-1" onClick={() => navigate("/preview")}>
-                        <svg
-                          width="20"
-                          height="21"
-                          viewBox="0 0 20 21"
-                          fill="#BC6C25"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M12.7734 3.85938L15 3L15.8203 0.8125C15.8594 0.617188 16.0547 0.5 16.25 0.5C16.4062 0.5 16.6016 0.617188 16.6406 0.8125L17.5 3L19.6875 3.85938C19.8828 3.89844 20 4.09375 20 4.25C20 4.44531 19.8828 4.64062 19.6875 4.67969L17.5 5.5L16.6406 7.72656C16.6016 7.88281 16.4062 8 16.25 8C16.0547 8 15.8594 7.88281 15.8203 7.72656L15 5.5L12.7734 4.67969C12.6172 4.64062 12.5 4.44531 12.5 4.25C12.5 4.09375 12.6172 3.89844 12.7734 3.85938ZM8.00781 3.39062L10.0391 7.84375L14.4922 9.875C14.7266 9.99219 14.8828 10.2266 14.8828 10.4609C14.8828 10.6953 14.7266 10.9297 14.4922 11.0078L10.0391 13.0781L8.00781 17.5312C7.89062 17.7656 7.65625 17.9219 7.42188 17.9219C7.1875 17.9219 6.95312 17.7656 6.875 17.5312L4.80469 13.0781L0.351562 11.0469C0.117188 10.9297 0 10.6953 0 10.4609C0 10.2266 0.117188 9.99219 0.351562 9.875L4.80469 7.84375L6.875 3.39062C6.95312 3.15625 7.1875 3 7.42188 3C7.65625 3 7.89062 3.15625 8.00781 3.39062ZM15 15.5L15.8203 13.3125C15.8594 13.1172 16.0547 13 16.25 13C16.4062 13 16.6016 13.1172 16.6406 13.3125L17.5 15.5L19.6875 16.3594C19.8828 16.3984 20 16.5938 20 16.75C20 16.9453 19.8828 17.1406 19.6875 17.1797L17.5 18L16.6406 20.2266C16.6016 20.3828 16.4062 20.5 16.25 20.5C16.0547 20.5 15.8594 20.3828 15.8203 20.2266L15 18L12.7734 17.1797C12.6172 17.1406 12.5 16.9453 12.5 16.75C12.5 16.5938 12.6172 16.3984 12.7734 16.3594L15 15.5Z"
-                            fill="#BC6C25"
-                          />
-                          <path
-                            d="M12.7734 3.85938L15 3L15.8203 0.8125C15.8594 0.617188 16.0547 0.5 16.25 0.5C16.4062 0.5 16.6016 0.617188 16.6406 0.8125L17.5 3L19.6875 3.85938C19.8828 3.89844 20 4.09375 20 4.25C20 4.44531 19.8828 4.64062 19.6875 4.67969L17.5 5.5L16.6406 7.72656C16.6016 7.88281 16.4062 8 16.25 8C16.0547 8 15.8594 7.88281 15.8203 7.72656L15 5.5L12.7734 4.67969C12.6172 4.64062 12.5 4.44531 12.5 4.25C12.5 4.09375 12.6172 3.89844 12.7734 3.85938ZM8.00781 3.39062L10.0391 7.84375L14.4922 9.875C14.7266 9.99219 14.8828 10.2266 14.8828 10.4609C14.8828 10.6953 14.7266 10.9297 14.4922 11.0078L10.0391 13.0781L8.00781 17.5312C7.89062 17.7656 7.65625 17.9219 7.42188 17.9219C7.1875 17.9219 6.95312 17.7656 6.875 17.5312L4.80469 13.0781L0.351562 11.0469C0.117188 10.9297 0 10.6953 0 10.4609C0 10.2266 0.117188 9.99219 0.351562 9.875L4.80469 7.84375L6.875 3.39062C6.95312 3.15625 7.1875 3 7.42188 3C7.65625 3 7.89062 3.15625 8.00781 3.39062ZM15 15.5L15.8203 13.3125C15.8594 13.1172 16.0547 13 16.25 13C16.4062 13 16.6016 13.1172 16.6406 13.3125L17.5 15.5L19.6875 16.3594C19.8828 16.3984 20 16.5938 20 16.75C20 16.9453 19.8828 17.1406 19.6875 17.1797L17.5 18L16.6406 20.2266C16.6016 20.3828 16.4062 20.5 16.25 20.5C16.0547 20.5 15.8594 20.3828 15.8203 20.2266L15 18L12.7734 17.1797C12.6172 17.1406 12.5 16.9453 12.5 16.75C12.5 16.5938 12.6172 16.3984 12.7734 16.3594L15 15.5Z"
-                            fill="white"
-                          />
-                        </svg>
-                        Generate Story
-                      </button>
-                    </div>
-                  </div>
+            <div className="container-tip">
+              <div className="row">
+                <div className="col-md-2"></div>
+                <div className="col-md-8 tip-img">
+                  <img src={img} alt="" />
+                  <h2>Tips for Using Story Generator.</h2>
                 </div>
               </div>
+              <div className="para-tip">
+                <h3>
+                  start by selecting the age limit that you creating story for.
+                </h3>
+                <h5>Young Children (Ages 3-6):</h5>
+                <p>
+                  These stories should be simple, colorful, and short. Include
+                  basic concepts of friendship, kindness, and sharing, with
+                  minimal conflict. Language should be straightforward, with
+                  repetitive phrases to make it engaging and easy to understand.
+                </p>
+                <h5>Older Children (Ages 7-12):</h5>
+                <p>
+                  Stories can be longer and more detailed, with exciting
+                  adventures, problem-solving, and more complex emotions. Themes
+                  like teamwork, courage, and learning from mistakes are ideal.
+                  Use imaginative settings and friendly language that expands
+                  vocabulary but remains age-appropriate.
+                </p>
+                <h5>Teenagers (Ages 13-18):</h5>
+                <p>
+                  For teens, you can explore complex themes, moral dilemmas, and
+                  deeper character development. Themes like identity,
+                  relationships, and self-discovery are popular. Language can be
+                  more conversational, with realistic dialogue and relatable
+                  experiences. Ensure the plot is engaging and the characters
+                  face challenges that resonate with this age group.
+                </p>
+                <section className="tip-theme">
+                <h4>select a Clear Theme or Genre.</h4>
+                <p>
+                  Decide on the genre (fantasy, sci-fi, romance, mystery, etc.)
+                  to set a consistent tone.
+                </p>
+                <p>
+                  Think about the core message or theme you want to convey, like
+                  friendship, adventure, or self-discovery, to give direction to
+                  the AI-generated content.
+                </p>
+                <h4>Incorporate Unexpected Twists.</h4>
+                <p>
+                  add prompts with surprises, like “a sudden betrayal” or “an
+                  unexpected ally appears,” to create suspense and keep the
+                  story dynamic.
+                </p>
+                </section>
+              </div>
             </div>
-            <div className="action-buttons-login-inner">
-            <button className="create-btn-login-inner" onClick={() => navigate("/generated")}>
+          </div>
+          <div className="action-buttons-tip">
+            <button
+              className="create-btn-tip"
+              onClick={() => navigate("/generated")}
+            >
               <span className="icon">
                 {/* <img src={img3} /> */}
                 <svg
@@ -240,10 +91,13 @@ function Login_inner() {
                     fill="white"
                   />
                 </svg>
-              </span>
+              </span>{" "}
               Create
             </button>
-            <button className="other-btn-login-inner" onClick={() => navigate("/history")}>
+            <button
+              className="other-btn-tip"
+              onClick={() => navigate("/history")}
+            >
               <span className="icon">
                 {/* <img src={img} /> */}
                 <svg
@@ -264,7 +118,7 @@ function Login_inner() {
                 </svg>
               </span>
             </button>
-            <button className="other-btn-login-inner" onClick={() => navigate("/tips")}>
+            <button className="other-btn-tip" onClick={() => navigate("/tips")}>
               <span className="icon">
                 {/* <img src={img4} /> */}
                 <svg
@@ -285,7 +139,10 @@ function Login_inner() {
                 </svg>
               </span>
             </button>
-            <button className="other-btn-login-inner" onClick={() => navigate("/preview")}>
+            <button
+              className="other-btn-tip
+            "
+            >
               <span className="icon">
                 {/* <img src={img5} /> */}
                 <svg
@@ -307,11 +164,10 @@ function Login_inner() {
               </span>
             </button>
           </div>
-          </div>
         </div>
-      </section>
+      </div>
     </>
   );
 }
 
-export default Login_inner;
+export default User_Tips;

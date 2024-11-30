@@ -4,8 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import Image2 from "../../../public/assets/image/stripe-2.png";
 import Image from "../../../public/assets/image/brown.png";
+import { useNavigate } from "react-router-dom";
 
 function Payment_confirm() {
+  const navigate = useNavigate();
   return (
     <>
       <section className="payment-confrim-section">
@@ -31,7 +33,9 @@ function Payment_confirm() {
                 </div>
 
                 <div className="col-md-10 st-h">
-                  <h6>payment method</h6>
+                  <div className="row">
+                    <h6>payment method</h6>
+                  </div>
                 </div>
                 <div className="container pay-select">
                   <div className="row">
@@ -40,46 +44,50 @@ function Payment_confirm() {
                     </div>
                     <div className="col-md-9">
                       {" "}
-                      <h6>john doe</h6><br/>
+                      <h6>john doe</h6>
+                      <br />
                       <h6>0123******456</h6>
                     </div>
                     <div className="col-md-1">
                       {" "}
-                      <input type="radio" name="" id="" className="radio-inpur" />
+                      <input
+                        type="radio"
+                        name=""
+                        id=""
+                        className="radio-inpur"
+                      />
                     </div>
                   </div>
                 </div>
 
                 <h3 className="total-py">total payable amount</h3>
                 <hr />
-                <div className="row">
-                  <div className="col-md-6 sub-total">
-                    <p>Subtotal</p>
+                <div className="row subtotal-confrim">
+                  <div className="col-md-6 sub-total-confrim">
+                    <h6>Subtotal</h6>
                   </div>
-                  <div className="col-md-6 sub-price">
-                    <p>$ 0.00</p>
+                  <div className="col-md-6 sub-price-confrim">
+                    <h6>$ 0.00</h6>
                   </div>
                 </div>
-                <div className="row">
-                  <div className="col-md-6 sub-total">
-                    <p>Tax</p>
+                <div className="row tax-total-confrim">
+                  <div className="col-md-6 sub-total-confrim">
+                    <h6>Tax</h6>
                   </div>
-                  <div className="col-md-6 sub-price">
-                    <p>$ 0.00</p>
+                  <div className="col-md-6 sub-price-confrim">
+                    <h6>$ 0.00</h6>
                   </div>
                   <hr />
                 </div>
-                <div className="row">
-                  <div className="col-md-6 sub-total">
-                    <p>Total Amount</p>
+                <div className="row amount-confrim">
+                  <div className="col-md-6 sub-total-confrim">
+                    <h6>Total Amount</h6>
                   </div>
-                  <div className="col-md-6 sub-price">
-                    <p>$ 0.00</p>
+                  <div className="col-md-6 sub-price-confrim">
+                    <h6>$ 0.00</h6>
                   </div>
                 </div>
-                <button className="btn-1">
-                  <a href="#">proceed to pay</a>
-                </button>
+                <button className="btn-1" onClick={() => navigate("/payment-success")}>pay now</button>
               </div>
             </div>
           </div>
