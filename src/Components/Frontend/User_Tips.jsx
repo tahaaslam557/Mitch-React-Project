@@ -23,14 +23,18 @@ function User_Tips() {
                 <h3>
                   start by selecting the age limit that you creating story for.
                 </h3>
-                <h5>Young Children (Ages 3-6):</h5>
+                <h5>
+                  Young Children <span>(Ages 3-6)</span>:
+                </h5>
                 <p>
                   These stories should be simple, colorful, and short. Include
                   basic concepts of friendship, kindness, and sharing, with
                   minimal conflict. Language should be straightforward, with
                   repetitive phrases to make it engaging and easy to understand.
                 </p>
-                <h5>Older Children (Ages 7-12):</h5>
+                <h5>
+                  Older Children <span>(Ages 7-12)</span>:
+                </h5>
                 <p>
                   Stories can be longer and more detailed, with exciting
                   adventures, problem-solving, and more complex emotions. Themes
@@ -38,7 +42,9 @@ function User_Tips() {
                   Use imaginative settings and friendly language that expands
                   vocabulary but remains age-appropriate.
                 </p>
-                <h5>Teenagers (Ages 13-18):</h5>
+                <h5>
+                  Teenagers <span>(Ages 13-18)</span>:
+                </h5>
                 <p>
                   For teens, you can explore complex themes, moral dilemmas, and
                   deeper character development. Themes like identity,
@@ -47,23 +53,39 @@ function User_Tips() {
                   experiences. Ensure the plot is engaging and the characters
                   face challenges that resonate with this age group.
                 </p>
-                <section className="tip-theme">
-                <h4>select a Clear Theme or Genre.</h4>
-                <p>
-                  Decide on the genre (fantasy, sci-fi, romance, mystery, etc.)
-                  to set a consistent tone.
-                </p>
-                <p>
-                  Think about the core message or theme you want to convey, like
-                  friendship, adventure, or self-discovery, to give direction to
-                  the AI-generated content.
-                </p>
-                <h4>Incorporate Unexpected Twists.</h4>
-                <p>
-                  add prompts with surprises, like “a sudden betrayal” or “an
-                  unexpected ally appears,” to create suspense and keep the
-                  story dynamic.
-                </p>
+
+                <section>
+                  <div className="tip-theme">
+                    <h4>select a Clear Theme or Genre.</h4>
+                    <p>
+                      Decide on the genre (fantasy, sci-fi, romance, mystery,
+                      etc.) to set a consistent tone. Think about the core
+                      message or theme you want to convey, like friendship,
+                      adventure, or self-discovery, to give direction to the
+                      AI-generated content.
+                    </p>
+                  </div>
+                  <div className="tip-theme">
+                    <h4>Incorporate Unexpected Twists.</h4>
+                    <p>
+                      add prompts with surprises, like “a sudden betrayal” or
+                      “an unexpected ally appears,” to create suspense and keep
+                      the story dynamic. Twists add complexity to the plot,
+                      making it more engaging.
+                    </p>
+                  </div>
+                  <div className="tip-theme">
+                    <h4>Incorporate Unexpected Twists.</h4>
+                    <p>
+                      add prompts with surprises, like “a sudden betrayal” or
+                      “an unexpected ally appears,” to create suspense and keep
+                      the story dynamic. Twists add complexity to the plot,
+                      making it more engaging. add prompts with surprises, like
+                      “a sudden betrayal” or “an unexpected ally appears,” to
+                      create suspense and keep the story dynamic. Twists add
+                      complexity to the plot, making it more engaging.
+                    </p>
+                  </div>
                 </section>
               </div>
             </div>
