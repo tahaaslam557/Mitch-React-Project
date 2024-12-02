@@ -972,6 +972,11 @@ img {
     }
   }
 
+  .close {
+    background-color: transparent;
+    border: none;
+  }
+
   .icon-times {
     display: flex;
     justify-content: end;
@@ -982,9 +987,15 @@ img {
       width: 25px;
       height: 25px;
       border: 1px solid rgba(188, 108, 37, 1);
-      color: rgba(188, 108, 37, 1);
+      color: #bc6c25;
       padding: 0.5rem;
       border-radius: 10px;
+      &:hover{
+        background-color: #3D1C0054;
+        border: 1px solid #BC6C25;
+        color: #bc6c25;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+      }
     }
   }
 
@@ -1276,8 +1287,8 @@ img {
   }
 
   .Stripe-hero {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), #000000A8),
-      url("../assets/image/Hero_2.png");
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+    url("../assets/image/Hero_2.png");
     width: 100%;
     min-height: 100vh;
     background-repeat: no-repeat;
@@ -3117,6 +3128,7 @@ img {
 
   .para-tip {
     overflow-y: scroll;
+
     h3 {
       font-family: $btn-family;
       font-size: 24px;

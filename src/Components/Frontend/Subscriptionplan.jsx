@@ -23,10 +23,12 @@ function Subscriptionplan() {
                 </div>
                 <div className="col-md-6 mb-4">
                   <div className="icon-times">
+                    <button className="close" onClick={() => navigate("/login-inner")}>
                     <FontAwesomeIcon
                       icon={faTimes}
                       className="sub-icon-times"
                     />
+                    </button>
                   </div>
                 </div>
 
