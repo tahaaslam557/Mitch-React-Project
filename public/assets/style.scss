@@ -9,7 +9,7 @@ $button-background: #ffffff;
 $font-family: "CustomFont";
 $btn-family: "Sarabun";
 $btn-1-family: "Sarabun";
-$To-Pay: #BC6C2533;
+$To-Pay: #bc6c2533;
 
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
@@ -311,11 +311,11 @@ p {
     transition: 0.4s;
   }
 
-  input:checked+.slider {
+  input:checked + .slider {
     background-color: #34c759;
   }
 
-  input:checked+.slider:before {
+  input:checked + .slider:before {
     transform: translateX(14px);
   }
 
@@ -575,11 +575,11 @@ p {
     transition: 0.4s;
   }
 
-  input:checked+.slider {
+  input:checked + .slider {
     background-color: #34c759;
   }
 
-  input:checked+.slider:before {
+  input:checked + .slider:before {
     transform: translateX(14px);
   }
 
@@ -874,7 +874,7 @@ img {
   }
 
   .box {
-    background-color: #BC6C2533;
+    background-color: #bc6c2533;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0px 0px 20px;
@@ -949,7 +949,7 @@ img {
     size: 20px;
     line-height: 26px;
     align-items: center;
-    background-color: #BC6C2533;
+    background-color: #bc6c2533;
     color: $text-white;
     padding: 12px 100px;
     border: 1.5px solid #ffffff;
@@ -990,9 +990,9 @@ img {
       color: #bc6c25;
       padding: 0.5rem;
       border-radius: 10px;
-      &:hover{
-        background-color: #3D1C0054;
-        border: 1px solid #BC6C25;
+      &:hover {
+        background-color: #3d1c0054;
+        border: 1px solid #bc6c25;
         color: #bc6c25;
         transition: background-color 0.3s ease, border-color 0.3s ease;
       }
@@ -1000,7 +1000,7 @@ img {
   }
 
   .box-under {
-    background-color: #BC6C2533;
+    background-color: #bc6c2533;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0px 0px 20px;
@@ -1083,8 +1083,6 @@ img {
 
 /*..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....Payment page CSS style..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....*/
 
-
-
 .payment-plan-section {
   hr {
     color: #fff;
@@ -1121,10 +1119,6 @@ img {
     align-items: center;
     justify-content: center;
   }
-
-
-
-
 
   button.back-btn {
     border: 1.5px solid $primary-color;
@@ -1206,7 +1200,7 @@ img {
     text-decoration: none;
     color: $text-white;
     border: 1.5px solid #fff;
-    background-color: #FFFFFF1F;
+    background-color: #ffffff1f;
     border-radius: 20px;
     padding: 10px;
 
@@ -1217,7 +1211,7 @@ img {
 
     &:hover {
       border: 1.5px solid #fff;
-      background-color: #FFF;
+      background-color: #fff;
       color: #000;
     }
   }
@@ -1274,12 +1268,7 @@ img {
   }
 }
 
-
-
 /*..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X..... STRIPE CARD page CSS style..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....*/
-
-
-
 
 .Stripe-section {
   hr {
@@ -1288,7 +1277,7 @@ img {
 
   .Stripe-hero {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
-    url("../assets/image/Hero_2.png");
+      url("../assets/image/Hero_2.png");
     width: 100%;
     min-height: 100vh;
     background-repeat: no-repeat;
@@ -1317,10 +1306,6 @@ img {
     align-items: center;
     justify-content: center;
   }
-
-
-
-
 
   button.back-btn {
     border: 1.5px solid $primary-color;
@@ -1439,7 +1424,7 @@ img {
         font-size: 18px;
         font-weight: 400;
         line-height: 23.4px;
-        color: #D6D6D6;
+        color: #d6d6d6;
       }
 
       &:focus {
@@ -1451,12 +1436,7 @@ img {
   }
 }
 
-
-
 /*..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X..... Payment Confrim page CSS style..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....*/
-
-
-
 
 .payment-confrim-section {
   hr {
@@ -1577,7 +1557,7 @@ img {
     text-decoration: none;
     color: $text-white;
     border: 1.5px solid #fff;
-    background-color: #FFFFFF1F;
+    background-color: #ffffff1f;
     border-radius: 20px;
     padding: 10px;
 
@@ -1588,7 +1568,7 @@ img {
 
     &:hover {
       border: 1.5px solid #fff;
-      background-color: #FFF;
+      background-color: #fff;
       color: #000;
     }
   }
@@ -1695,7 +1675,6 @@ img {
     padding: 40px 0 0;
     border-radius: 10px;
 
-
     img {
       display: flex;
       justify-content: center;
@@ -1719,7 +1698,7 @@ img {
       appearance: none;
       width: 20px;
       height: 20px;
-      border: 2px solid #FDE63E;
+      border: 2px solid #fde63e;
       border-radius: 50%;
       background-color: transparent;
       outline: none;
@@ -1734,7 +1713,7 @@ img {
       width: 50%;
       /* Inner circle size */
       height: 50%;
-      background-color: #FDE63E;
+      background-color: #fde63e;
       /* Transparent center */
       border-radius: 50%;
       /* Inner circle is circular */
@@ -1746,11 +1725,7 @@ img {
   }
 }
 
-
-
 /*..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X..... Payment_Successfull page CSS style..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....*/
-
-
 
 .successful-section {
   padding: 0;
@@ -1829,8 +1804,6 @@ img {
   }
 }
 
-
-
 /*..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X..... Login_inner page CSS style..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....*/
 
 .login-inner-section {
@@ -1881,7 +1854,7 @@ img {
     font-weight: 600;
     line-height: 23px;
     text-transform: capitalize;
-    color: #4D4D4D;
+    color: #4d4d4d;
     margin-bottom: 10px;
   }
 
@@ -1892,19 +1865,19 @@ img {
     line-height: 23px;
     padding: 6px 20px;
     background-color: rgba(188, 108, 37, 0.078);
-    border: 2px solid #BC6C25;
+    border: 2px solid #bc6c25;
     border-radius: 33px;
     cursor: pointer;
-    color: #BC6C25;
+    color: #bc6c25;
     transition: all 0.3s ease;
 
     &:hover {
-      background-color: #BC6C25;
+      background-color: #bc6c25;
       color: #fff;
     }
 
     &.selected {
-      background-color: #BC6C25;
+      background-color: #bc6c25;
       color: #fff;
     }
   }
@@ -1914,8 +1887,8 @@ img {
     height: 100px;
     padding: 10px;
     font-size: 16px;
-    background-color: #BC6C251F;
-    border: 1px solid #BBBBBB80;
+    background-color: #bc6c251f;
+    border: 1px solid #bbbbbb80;
     border-radius: 5px;
     backdrop-filter: blur(5px);
     resize: vertical;
@@ -1926,11 +1899,11 @@ img {
       font-size: 18px;
       font-weight: 400;
       line-height: 23px;
-      color: #4D4D4D;
+      color: #4d4d4d;
     }
 
     &:focus {
-      border-color: #BBBBBB !important;
+      border-color: #bbbbbb !important;
     }
   }
 
@@ -1963,7 +1936,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #BC6C25;
+    background-color: #bc6c25;
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -1982,7 +1955,7 @@ img {
     align-items: center;
     gap: 20px;
     padding: 8px;
-    background-color: #FFFFFF33;
+    background-color: #ffffff33;
     border-radius: 30px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(12px);
@@ -1995,10 +1968,10 @@ img {
     transform: translate(-50%, -50%);
 
     .create-btn-login-inner {
-      background-color: #3D1C0054;
+      background-color: #3d1c0054;
       color: white;
       padding: 8px 20px 8px 20px;
-      border: 1px solid #BC6C25;
+      border: 1px solid #bc6c25;
       border-radius: 33px;
       display: flex;
       align-items: center;
@@ -2010,9 +1983,9 @@ img {
       gap: 6px;
 
       &:hover {
-        background-color: #BC6C25;
+        background-color: #bc6c25;
         transform: scale(1.1);
-        border: 1px solid #FFFFFF;
+        border: 1px solid #ffffff;
       }
 
       .icon {
@@ -2036,11 +2009,11 @@ img {
     }
 
     .other-btn-login-inner {
-      background-color: #3D1C0054;
+      background-color: #3d1c0054;
       color: white;
       width: 18%;
       height: 60px;
-      border: 1px solid #BC6C25;
+      border: 1px solid #bc6c25;
       border-radius: 33px;
       display: flex;
       align-items: center;
@@ -2049,8 +2022,8 @@ img {
       transition: background-color 0.3s ease, transform 0.3s ease;
 
       &:hover {
-        background-color: #BC6C25;
-        border: 1px solid #FFFFFF;
+        background-color: #bc6c25;
+        border: 1px solid #ffffff;
         transform: scale(1.1);
       }
 
@@ -2072,320 +2045,264 @@ img {
 /*..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X..... Story preview page CSS style..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....*/
 
 .Storypreview-section {
-  padding: 0;
-  box-sizing: none;
-
   .storypreview-hero {
-    padding: 20px 0;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
       url("../assets/image/Hero.png");
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
 
+.box {
+  background-color: white;
+  box-shadow: 0px 0px 20px;
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 33px;
+  padding: 50px 33px 40px;
+  display: flex;
+  flex-direction: column;
+}
 
-  .container-preview {
-    width: auto;
-    height: 785px;
-    margin: 0 40px 0;
-    padding: 30px 10px;
-    border-radius: 33px;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
+.icon-times {
+  display: flex;
+  justify-content: flex-start; // Aligns the icon to the left
+  align-items: center; // Vertically centers it if needed
+  width: 100%; // Takes full width of the container
+  cursor: pointer;
+
+  svg {
+    fill: rgba(253, 230, 62, 1);
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgba(188, 108, 37, 1);
+    color: rgba(188, 108, 37, 1);
+    padding: 0.5rem;
+    border-radius: 10px;
+  }
+}
+
+.box {
+  // Existing styles
+  align-items: flex-start; // Aligns children to the left
+}
+
+.para {
+  max-height: 400px; // Set the desired height
+  overflow-y: auto; // Enable vertical scrolling when content overflows
+
+  // Custom scrollbar styles for Webkit browsers (Chrome, Safari)
+  &::-webkit-scrollbar {
+    width: 16px; // Scrollbar width
   }
 
-  .icon-times {
-    background-color: transparent;
+  &::-webkit-scrollbar-track {
+    background: #f0f0f0; // Track color (background of the scrollbar)
+    border-radius: 33px; // Optional: Rounded corners for track
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(188, 108, 37, 1); // Custom thumb color
+    border-radius: 33px; // Optional: Rounded scrollbar thumb
+    border: 2px solid #f0f0f0; // Optional: Adds border to thumb
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(188, 108, 37, 0.8); // Slightly darker on hover
+  }
+
+  p {
+    margin-bottom: 1rem; // Optional: Space between paragraphs
+  }
+}
+
+.btn-con {
+  display: flex;
+  justify-content: space-between; // Spread buttons evenly
+  gap: 0px; // Adds spacing between buttons
+  margin-top: 20px;
+
+  button {
+    width: 292px; // Make buttons take full width
+    padding: 0.8rem 1.4rem;
     border: none;
-    display: flex;
-    justify-content: flex-start; // Aligns the icon to the left
-    align-items: center; // Vertically centers it if needed
-    width: 100%; // Takes full width of the container
+    border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative; // Set position to relative for the image to be positioned inside the button
 
-    svg {
-      fill: rgba(253, 230, 62, 1);
-      width: 25px;
-      height: 25px;
+    // First button styling
+    &:first-child {
+      background-color: rgba(
+        188,
+        108,
+        37,
+        1
+      ); // Orange background for the first button
+      color: white; // White text for the first button
+
+      &:hover {
+        background-color: darken(rgba(188, 108, 37, 1), 10%); // Darken on hover
+      }
+    }
+
+    // Remaining buttons styling
+    &:not(:first-child) {
+      background-color: white; // White background for remaining buttons
+      color: rgba(188, 108, 37, 1); // Orange text for remaining buttons
+      border: 1px solid rgba(188, 108, 37, 1); // Border in orange for remaining buttons
+
+      &:hover {
+        background-color: rgba(
+          188,
+          108,
+          37,
+          0.1
+        ); // Light orange background on hover
+      }
+    }
+
+    // Image styling inside buttons
+    img {
+      position: absolute; // Position the image absolutely inside the button
+      left: 65px; // Adjust the image's left position (space from the left edge of the button)
+      top: 8%; // Vertically center the image
+      transform: translateY(-50%); // Adjust for perfect vertical centering
+      width: 20px; // Set the width of the image
+      height: 20px; // Set the height of the image
+    }
+  }
+
+  .pdf-btn {
+    width: 292px; // Make buttons take full width
+    padding: 0.8rem 1.4rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative; // Set position to relative for the image to be positioned inside the button
+
+    // First button styling
+    &:first-child {
+      background-color: #fff; // Orange background for the first button
+      color: rgba(188, 108, 37, 1); // White text for the first button
       border: 1px solid rgba(188, 108, 37, 1);
-      color: rgba(188, 108, 37, 1);
-      padding: 0.5rem;
-      border-radius: 10px;
-    }
-  }
-
-  h3 {
-    font-family: $btn-family;
-    font-size: 33px;
-    color: #4D4D4D;
-    font-weight: 700;
-    line-height: 42px;
-    letter-spacing: 1px;
-    text-align: left;
-  }
-
-  .box {
-    align-items: flex-start;
-  }
-
-  .para {
-    font-family: $btn-family;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 32px;
-    color: #4D4D4D;
-    max-height: 600px;
-    overflow-y: auto;
-
-    &::-webkit-scrollbar {
-      width: 16px;
-    }
-
-    &::-webkit-scrollbar-track {
-      background: #f0f0f0;
-      box-shadow: inset 0px 0px 4px 2px #00000040;
-      border-radius: 33px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background-color: rgba(188, 108, 37, 1);
-      border-radius: 33px;
-      box-shadow: 0 4px 4px #00000040;
-      // border: 2px solid #f0f0f0;
-    }
-
-    &::-webkit-scrollbar-thumb:hover {
-      background-color: rgba(188, 108, 37, 0.8);
-    }
-
-    p {
-      margin-bottom: 1rem;
-    }
-  }
-
-  .btn-con {
-    display: flex;
-    justify-content: center;
-    gap: 0px;
-    margin-top: 20px;
-
-    button {
-      width: 100%;
-      padding: 0.8rem 1.4rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      position: relative;
-
-      &:first-child {
-        background-color: rgba(188, 108, 37, 1);
-        color: white;
-
-        &:hover {
-          background-color: darken(rgba(188, 108, 37, 1), 10%);
-        }
-      }
-
-
-      &:not(:first-child) {
-        background-color: white;
-        color: rgba(188, 108, 37, 1);
-        border: 1px solid rgba(188, 108, 37, 1);
-
-        &:hover {
-          background-color: rgba(188, 108, 37, 0.1);
-        }
-      }
-
-
-      img {
-        position: absolute;
-        left: 36.5%;
-        top: 8%;
-        transform: translateY(-50%);
-        width: 20px;
-        height: 20px;
-      }
-    }
-
-    .SDD {
-      width: 100%;
-    }
-
-    .pdf-btn {
-      width: 100%;
-      padding: 0.8rem 1.4rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      position: relative;
-
-
-      &:first-child {
-        background-color: #FFF;
-        color: rgba(188, 108, 37, 1);
-        border: 1px solid rgba(188, 108, 37, 1);
-
-        &:hover {
-          background-color: darken(rgba(188, 108, 37, 1), 10%);
-        }
-      }
-
-
-      img {
-        position: absolute;
-        left: 35%;
-        top: 8%;
-        transform: translateY(-50%);
-        width: 20px;
-        height: 20px;
-      }
-    }
-
-    .audio-btn {
-      width: 100%;
-      padding: 0.8rem 1.4rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      position: relative;
-
-
-      &:first-child {
-        background-color: #FFF;
-        color: rgba(188, 108, 37, 1);
-        border: 1px solid rgba(188, 108, 37, 1);
-
-        &:hover {
-          background-color: darken(rgba(188, 108, 37, 1), 10%);
-        }
-      }
-
-
-      img {
-        position: absolute;
-        left: 33.5%;
-        top: 8%;
-        transform: translateY(-50%);
-        width: 20px;
-        height: 20px;
-      }
-    }
-  }
-
-  .action-buttons-container {
-    display: flex;
-    justify-content: center;
-
-    align-items: center;
-    gap: 20px;
-
-    padding: 20px;
-    background-color: #FFFFFF33;
-
-    border-radius: 30px;
-
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-
-    backdrop-filter: blur(12px);
-
-    width: 90%;
-
-    max-width: 500px;
-
-    margin: 40px auto;
-
-    position: absolute;
-    top: 88%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    .create-btn {
-      background-color: #3D1C0054;
-
-      color: white;
-
-      padding: 8px 20px 8px 20px;
-
-      border: 1px solid #BC6C25;
-      border-radius: 33px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-      width: 30%;
-      height: 60px;
-      gap: 6px;
 
       &:hover {
-        background-color: #BC6C25;
-        transform: scale(1.1);
-        border: 1px solid #FFFFFF;
-      }
-
-      .icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-      }
-
-      img {
-        width: 24px;
-        height: 24px;
-        display: block;
-        margin-top: 50px;
-      }
-
-      span {
-        font-size: 16px;
-        font-weight: bold;
+        background-color: darken(rgba(188, 108, 37, 1), 10%); // Darken on hover
       }
     }
 
-    .other-btn {
-      background-color: #3D1C0054;
-      color: white;
-      width: 18%;
-      height: 60px;
-      border: 1px solid #BC6C25;
-      border-radius: 33px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.3s ease;
+    // Image styling inside buttons
+    img {
+      position: absolute; // Position the image absolutely inside the button
+      left: 55px; // Adjust the image's left position (space from the left edge of the button)
+      top: 8%; // Vertically center the image
+      transform: translateY(-50%); // Adjust for perfect vertical centering
+      width: 20px; // Set the width of the image
+      height: 20px; // Set the height of the image
+    }
+  }
+
+  .audio-btn {
+    width: 292px; // Make buttons take full width
+    padding: 0.8rem 1.4rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative; // Set position to relative for the image to be positioned inside the button
+
+    // First button styling
+    &:first-child {
+      background-color: #fff; // Orange background for the first button
+      color: rgba(188, 108, 37, 1); // White text for the first button
+      border: 1px solid rgba(188, 108, 37, 1);
 
       &:hover {
-        background-color: #BC6C25;
-        border: 1px solid #FFFFFF;
-        transform: scale(1.1);
+        background-color: darken(rgba(188, 108, 37, 1), 10%); // Darken on hover
       }
+    }
 
-      .icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      svg {
-        width: 24px;
-        height: 24px;
-        display: block;
-      }
+    // Image styling inside buttons
+    img {
+      position: absolute; // Position the image absolutely inside the button
+      left: 50px; // Adjust the image's left position (space from the left edge of the button)
+      top: 8%; // Vertically center the image
+      transform: translateY(-50%); // Adjust for perfect vertical centering
+      width: 20px; // Set the width of the image
+      height: 20px; // Set the height of the image
     }
   }
 }
 
+.story-buttons-container {
+  display: flex;
+  gap: 16px; /* Adjusts the spacing between buttons */
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0; /* Top and bottom margin */
+  padding: 20px;
+  background-color: #ffffff33; /* Semi-transparent dark background */
+  border-radius: 30px; /* Rounded container corners */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+  backdrop-filter: blur(12px); /* Stronger blur effect */
+  width: 90%; /* Adjusted width to fit the content */
+  max-width: 500px;
+  margin-left: 700px;
+}
 
+.create-btn {
+  position: relative;
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  overflow: hidden;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  width: 100px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  background-color: #3d1c0054; /* Example background */
+  border: 1px solid #bc6c25;
+  border-radius: 33px; /* Fully rounded corners */
+  cursor: pointer;
+  overflow: hidden;
+  color: white;
 
+  &:hover {
+    background-color: #bc6c25;
+    border-color: #ffffff;
+    color: white;
+  }
+
+  svg {
+    width: 20px; /* Set a fixed width */
+    height: 20px; /* Set a fixed height */
+    transition: transform 0.3s ease;
+    position: absolute; /* Keeps SVG centered */
+  }
+
+  .hidden-text {
+    opacity: 0;
+    transform: translateX(100%); /* Start off-screen to the right */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    white-space: nowrap; /* Prevents text from wrapping */
+    margin-left: 8px;
+  }
+
+  &:hover {
+    .hidden-text {
+      opacity: 1;
+      transform: translateX(0); /* Slide in from the right */
+    }
+
+    svg {
+      transform: translateX(-30px); /* Move icon to the left */
+    }
+  }
+}
 
 /*..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X..... Generated_story page CSS style..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....*/
 .Generated-section {
@@ -2400,7 +2317,6 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
   }
-
 
   .container-Generated {
     margin: 0 40px 0;
@@ -2436,7 +2352,7 @@ img {
   h5 {
     font-family: $btn-family;
     font-size: 20px;
-    color: #BC6C25;
+    color: #bc6c25;
     font-weight: 600;
     line-height: 26px;
     letter-spacing: 1px;
@@ -2447,7 +2363,7 @@ img {
   h6 {
     font-family: $btn-family;
     font-size: 16px;
-    color: #6D6D6D;
+    color: #6d6d6d;
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 1px;
@@ -2457,7 +2373,7 @@ img {
   h3 {
     font-family: $btn-family;
     font-size: 33px;
-    color: #4D4D4D;
+    color: #4d4d4d;
     font-weight: 700;
     line-height: 42px;
     letter-spacing: 1px;
@@ -2469,7 +2385,7 @@ img {
     font-size: 22px;
     font-weight: 500;
     line-height: 32px;
-    color: #4D4D4D;
+    color: #4d4d4d;
     max-height: 785px;
     overflow-y: auto;
 
@@ -2523,7 +2439,6 @@ img {
         }
       }
 
-
       &:not(:first-child) {
         background-color: white;
         color: rgba(188, 108, 37, 1);
@@ -2533,7 +2448,6 @@ img {
           background-color: rgba(188, 108, 37, 0.1);
         }
       }
-
 
       img {
         position: absolute;
@@ -2562,18 +2476,16 @@ img {
       transition: background-color 0.3s ease;
       position: relative;
 
-
       &:first-child {
-        background-color: #FFF;
+        background-color: #fff;
         color: rgba(188, 108, 37, 1);
         border: 1px solid rgba(188, 108, 37, 1);
 
         &:hover {
           background-color: rgba(188, 108, 37, 1);
-          color: #FFF
+          color: #fff;
         }
       }
-
 
       img {
         position: absolute;
@@ -2598,18 +2510,16 @@ img {
       transition: background-color 0.3s ease;
       position: relative;
 
-
       &:first-child {
-        background-color: #FFF;
+        background-color: #fff;
         color: rgba(188, 108, 37, 1);
         border: 1px solid rgba(188, 108, 37, 1);
 
         &:hover {
           background-color: rgba(188, 108, 37, 1);
-          color: #FFF;
+          color: #fff;
         }
       }
-
 
       img {
         position: absolute;
@@ -2624,105 +2534,66 @@ img {
 
   .action-buttons-Generated {
     display: flex;
-    justify-content: center;
-
+    gap: 16px; /* Adjusts the spacing between buttons */
     align-items: center;
-    gap: 20px;
-
+    justify-content: center;
+    margin: 20px 0; /* Top and bottom margin */
     padding: 20px;
-    background-color: #FFFFFF33;
-
-    border-radius: 30px;
-
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-
-    backdrop-filter: blur(12px);
-
-    width: 90%;
-
+    background-color: #ffffff33; /* Semi-transparent dark background */
+    border-radius: 30px; /* Rounded container corners */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    backdrop-filter: blur(12px); /* Stronger blur effect */
+    width: 90%; /* Adjusted width to fit the content */
     max-width: 500px;
+    margin-left: 700px;
+  }
 
-    margin: 40px auto;
+  .create-btn {
+    position: relative;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    overflow: hidden;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    width: 100px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    background-color: #3d1c0054; /* Example background */
+    border: 1px solid #bc6c25;
+    border-radius: 33px; /* Fully rounded corners */
+    cursor: pointer;
+    overflow: hidden;
+    color: white;
 
-    position: absolute;
-    top: 88%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    .create-btn-Generated {
-      background-color: #3D1C0054;
-
+    &:hover {
+      background-color: #bc6c25;
+      border-color: #ffffff;
       color: white;
-
-      padding: 8px 20px 8px 20px;
-
-      border: 1px solid #BC6C25;
-      border-radius: 33px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-      width: 30%;
-      height: 60px;
-      gap: 6px;
-
-      &:hover {
-        background-color: #BC6C25;
-        transform: scale(1.1);
-        border: 1px solid #FFFFFF;
-      }
-
-      .icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-      }
-
-      img {
-        width: 24px;
-        height: 24px;
-        display: block;
-        margin-top: 50px;
-      }
-
-      span {
-        font-size: 16px;
-        font-weight: bold;
-      }
     }
 
-    .other-btn-Generated {
-      background-color: #3D1C0054;
-      color: white;
-      width: 18%;
-      height: 60px;
-      border: 1px solid #BC6C25;
-      border-radius: 33px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.3s ease;
+    svg {
+      width: 20px; /* Set a fixed width */
+      height: 20px; /* Set a fixed height */
+      transition: transform 0.3s ease;
+      position: absolute; /* Keeps SVG centered */
+    }
 
-      &:hover {
-        background-color: #BC6C25;
-        border: 1px solid #FFFFFF;
-        transform: scale(1.1);
-      }
+    .hidden-text {
+      opacity: 0;
+      transform: translateX(100%); /* Start off-screen to the right */
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      white-space: nowrap; /* Prevents text from wrapping */
+      margin-left: 8px;
+    }
 
-      .icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    &:hover {
+      .hidden-text {
+        opacity: 1;
+        transform: translateX(0); /* Slide in from the right */
       }
 
       svg {
-        width: 24px;
-        height: 24px;
-        display: block;
+        transform: translateX(-30px); /* Move icon to the left */
       }
     }
   }
@@ -2827,14 +2698,14 @@ img {
     h5 {
       display: inline-block;
       margin-right: 20px; // Space between headings
-      color: #BC6C25;
+      color: #bc6c25;
       text-transform: capitalize;
     }
 
     h6 {
       display: inline-block;
       margin-right: 20px; // Space between headings
-      color: #6D6D6D;
+      color: #6d6d6d;
     }
 
     h3 {
@@ -2856,7 +2727,7 @@ img {
     line-height: 26px;
     background-color: #ffffff1a;
     /* Transparent background */
-    color: #BC6C25;
+    color: #bc6c25;
     text-transform: capitalize;
     width: 100%;
     height: 54px;
@@ -2873,165 +2744,76 @@ img {
     padding: 12px 20px;
 
     &:hover {
-      background-color: rgba(255,
-          255,
-          255,
-          0.2);
+      background-color: rgba(255, 255, 255, 0.2);
     }
   }
 
   .history-buttons-container {
     display: flex;
-    justify-content: center;
-    /* Center the buttons horizontally */
+    gap: 16px; /* Adjusts the spacing between buttons */
     align-items: center;
-    gap: 20px;
-    /* Space between buttons */
+    justify-content: center;
+    margin: 20px 0; /* Top and bottom margin */
     padding: 20px;
-    background-color: #FFFFFF33;
-    /* Semi-transparent dark background */
-    border-radius: 30px;
-    /* Rounded container corners */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-    /* Stronger shadow for depth */
-    backdrop-filter: blur(12px);
-    /* Stronger blur effect */
-    width: 90%;
-    /* Adjusted width to fit the content */
+    background-color: #ffffff33; /* Semi-transparent dark background */
+    border-radius: 30px; /* Rounded container corners */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    backdrop-filter: blur(12px); /* Stronger blur effect */
+    width: 90%; /* Adjusted width to fit the content */
     max-width: 500px;
-    /* Set a maximum width */
-    margin: 40px auto;
-    /* Center the container with top margin */
+    margin-left: 700px;
+  }
 
-    // .create-btn {
-    //   background-color: #3D1C0054; /* Orange background */
-    //   color: white; /* White text color */
-    //   padding: 8px 20px 8px 20px; /* Larger padding for a bigger button */
-    //   border: 1px solid #BC6C25;
-    //   border-radius: 33px; /* Fully rounded corners */
-    //   display: flex;
-    //   align-items: center;
-    //   justify-content: center;
-    //   cursor: pointer;
-    //   transition: background-color 0.3s ease, transform 0.3s ease;
-    //   width: 30%;
-    //   height: 60px;
-    //   gap: 6px;
+  .create-btn {
+    position: relative;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    overflow: hidden;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    width: 100px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    background-color: #3d1c0054; /* Example background */
+    border: 1px solid #bc6c25;
+    border-radius: 33px; /* Fully rounded corners */
+    cursor: pointer;
+    overflow: hidden;
+    color: white;
 
-    //   &:hover {
-    //     background-color: #BC6C25;
-    //     border: 1px solid #FFF;
-    //     transform: scale(1.1); /* Slight zoom effect */
-    //   }
-    //   &:active{
-    //     background-color: #BC6C25;
-    //     border: 1px solid #FFF;
-    //   }
-    //   span {
-    //     font-size: 16px; /* Adjusted font size for text */
-    //     font-weight: bold;
-    //   }
-
-    //   // .hidden-text {
-    //   //   opacity: 0;
-    //   //   visibility: hidden;
-    //   //   transition: opacity 0.3s ease, visibility 0.3s ease;
-    //   // }
-
-    //   // .hidden-text.visible {
-    //   //   opacity: 1;
-    //   //   visibility: visible;
-    //   // }
-    // }
-
-    .create-btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      width: 100px;
-      /* Adjust as needed */
-      height: 50px;
-      /* Adjust as needed */
-      background-color: #3D1C0054;
-      /* Example background */
-      border: 1px solid #BC6C25;
-      border-radius: 33px;
-      /* Fully rounded corners */
-      cursor: pointer;
-      overflow: hidden;
-
-      &:hover {
-        background-color: #BC6C25;
-        border: 1px solid #FFF;
-        transform: scale(1.1);
-        /* Slight zoom effect */
-      }
-    }
-
-
-
-    .create-btn svg {
-      transition: transform 0.3s ease;
-    }
-
-    .create-btn .hidden-text {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 10px;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.3s ease, visibility 0.3s ease, bottom 0.3s ease;
-    }
-
-    .create-btn:hover svg {
-      transform: translateY(-40px);
-      /* Move SVG slightly upward */
-    }
-
-    .create-btn:hover .hidden-text {
-      opacity: 1;
-      visibility: visible;
-      // bottom: 30px; /* Move text to a higher position */
-    }
-
-
-
-    .other-btn {
-      background-color: #3D1C0054;
-      /* Transparent background */
+    &:hover {
+      background-color: #bc6c25;
+      border-color: #ffffff;
       color: white;
-      /* Icon color */
-      width: 18%;
-      height: 60px;
-      border: 2px solid rgba(188, 108, 37, 1);
-      /* White border for other buttons */
-      border-radius: 33px;
-      /* Circular shape */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-
-      &:hover {
-        background-color: #BC6C25;
-        border: 1px solid #FFF;
-        transform: scale(1.1);
-        /* Slight zoom effect */
-      }
-
-      &:active {
-        background-color: #BC6C25;
-        border: 1px solid #FFF;
-      }
     }
 
+    svg {
+      width: 20px; /* Set a fixed width */
+      height: 20px; /* Set a fixed height */
+      transition: transform 0.3s ease;
+      position: absolute; /* Keeps SVG centered */
+    }
+
+    .hidden-text {
+      opacity: 0;
+      transform: translateX(100%); /* Start off-screen to the right */
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      white-space: nowrap; /* Prevents text from wrapping */
+      margin-left: 8px;
+    }
+
+    &:hover {
+      .hidden-text {
+        opacity: 1;
+        transform: translateX(0); /* Slide in from the right */
+      }
+
+      svg {
+        transform: translateX(-30px); /* Move icon to the left */
+      }
+    }
   }
 }
-
-
 
 /*..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X..... tips for user page CSS style..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....*/
 .tip-section {
@@ -3046,7 +2828,6 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
   }
-
 
   .container-tip {
     margin: 0 40px 0;
@@ -3074,7 +2855,7 @@ img {
         font-size: 20px;
         font-weight: 500;
         line-height: 26px;
-        color: #4D4D4D;
+        color: #4d4d4d;
       }
     }
   }
@@ -3089,13 +2870,13 @@ img {
       padding: 0;
       font-family: $font-family;
       font-size: 44px;
-      color: #BC6C25;
+      color: #bc6c25;
       font-weight: 600;
       line-height: 57px;
       letter-spacing: 1px;
       text-align: center;
       text-transform: capitalize;
-      text-shadow: 0 4px 4px #FDE63E80;
+      text-shadow: 0 4px 4px #fde63e80;
 
       // Move img styles outside h2
     }
@@ -3112,7 +2893,7 @@ img {
   h3 {
     font-family: $btn-family;
     font-size: 33px;
-    color: #4D4D4D;
+    color: #4d4d4d;
     font-weight: 700;
     line-height: 42px;
     letter-spacing: 1px;
@@ -3127,7 +2908,7 @@ img {
       font-size: 24px;
       font-weight: 700;
       line-height: 32px;
-      color: #BC6C25;
+      color: #bc6c25;
       text-transform: capitalize;
     }
 
@@ -3136,7 +2917,7 @@ img {
       font-size: 20px;
       font-weight: 800;
       line-height: 26px;
-      color: #4D4D4D;
+      color: #4d4d4d;
       text-transform: capitalize;
 
       span {
@@ -3144,7 +2925,7 @@ img {
         font-size: 20px;
         line-height: 26px;
         font-family: $btn-family;
-        color: #4D4D4D;
+        color: #4d4d4d;
       }
     }
 
@@ -3153,7 +2934,7 @@ img {
       font-size: 20px;
       line-height: 26px;
       line-height: 26px;
-      color: #4D4D4D;
+      color: #4d4d4d;
     }
 
     &::-webkit-scrollbar {
@@ -3184,114 +2965,72 @@ img {
 
   .action-buttons-tip {
     display: flex;
-    justify-content: center;
-
+    gap: 16px; /* Adjusts the spacing between buttons */
     align-items: center;
-    gap: 20px;
-
+    justify-content: center;
+    margin: 20px 0; /* Top and bottom margin */
     padding: 20px;
-    background-color: #FFFFFF33;
-
-    border-radius: 30px;
-
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-
-    backdrop-filter: blur(12px);
-
-    width: 90%;
-
+    background-color: #ffffff33; /* Semi-transparent dark background */
+    border-radius: 30px; /* Rounded container corners */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    backdrop-filter: blur(12px); /* Stronger blur effect */
+    width: 90%; /* Adjusted width to fit the content */
     max-width: 500px;
+    margin-left: 700px;
+  }
 
-    margin: 40px auto;
+  .create-btn {
+    position: relative;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    overflow: hidden;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    width: 100px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    background-color: #3d1c0054; /* Example background */
+    border: 1px solid #bc6c25;
+    border-radius: 33px; /* Fully rounded corners */
+    cursor: pointer;
+    overflow: hidden;
+    color: white;
 
-    position: absolute;
-    top: 88%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    .create-btn-tip {
-      background-color: #3D1C0054;
-
+    &:hover {
+      background-color: #bc6c25;
+      border-color: #ffffff;
       color: white;
-
-      padding: 8px 20px 8px 20px;
-
-      border: 1px solid #BC6C25;
-      border-radius: 33px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-      width: 30%;
-      height: 60px;
-      gap: 6px;
-
-      &:hover {
-        background-color: #BC6C25;
-        transform: scale(1.1);
-        border: 1px solid #FFFFFF;
-      }
-
-      .icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-      }
-
-      img {
-        width: 24px;
-        height: 24px;
-        display: block;
-        margin-top: 50px;
-      }
-
-      span {
-        font-size: 16px;
-        font-weight: bold;
-      }
-
     }
 
-    .other-btn-tip {
-      background-color: #3D1C0054;
-      color: white;
-      width: 18%;
-      height: 60px;
-      border: 1px solid #BC6C25;
-      border-radius: 33px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.3s ease;
+    svg {
+      width: 20px; /* Set a fixed width */
+      height: 20px; /* Set a fixed height */
+      transition: transform 0.3s ease;
+      position: absolute; /* Keeps SVG centered */
+    }
 
-      &:hover {
-        background-color: #BC6C25;
-        border: 1px solid #FFFFFF;
-        transform: scale(1.1);
-      }
+    .hidden-text {
+      opacity: 0;
+      transform: translateX(100%); /* Start off-screen to the right */
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      white-space: nowrap; /* Prevents text from wrapping */
+      margin-left: 8px;
+    }
 
-      .icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    &:hover {
+      .hidden-text {
+        opacity: 1;
+        transform: translateX(0); /* Slide in from the right */
       }
 
       svg {
-        width: 24px;
-        height: 24px;
-        display: block;
+        transform: translateX(-30px); /* Move icon to the left */
       }
     }
   }
 }
 
-
 /*..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X..... Account page CSS style..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....*/
-
 
 .account-section {
   padding: 0;
@@ -3411,7 +3150,7 @@ img {
       font-size: 18px;
       line-height: 26px;
       text-transform: capitalize;
-      background-color: #ffffff1a;
+      background-color: #ffffff;
       color: #bc6c25;
       padding: 12px 20px;
       border: 1.5px solid rgba(188, 108, 37, 1);
@@ -3586,7 +3325,7 @@ img {
     width: 90%; /* Adjusted width to fit the content */
     max-width: 500px;
   }
-  
+
   .create-btn {
     position: relative;
     display: flex;
@@ -3603,6 +3342,12 @@ img {
     cursor: pointer;
     overflow: hidden;
     color: white;
+
+    &:hover {
+      background-color: #bc6c25;
+      border-color: #ffffff;
+      color: white;
+    }
 
     svg {
       width: 20px; /* Set a fixed width */
@@ -3626,7 +3371,7 @@ img {
       }
 
       svg {
-        transform: translateX(-30px); /* Move icon to the right */
+        transform: translateX(-30px); /* Move icon to the left */
       }
     }
   }

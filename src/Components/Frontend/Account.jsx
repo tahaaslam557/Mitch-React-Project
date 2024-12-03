@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useRef, useState } from "react";
-import Image2 from "../../../public/assets/image/account-stripe.png";
+import Image2 from "../../../public/assets/image/stripe-small.png";
 
 function Account() {
   const buttonRef = useRef(null); // Reference to the button element
@@ -121,12 +121,7 @@ function Account() {
                       </div>
                       <div className="col-md-1">
                         {" "}
-                        <input
-                          type="radio"
-                          name=""
-                          id=""
-                          className="radio-input"
-                        />
+                        <input type="radio" className="radio-input" />
                       </div>
                     </div>
                   </div>
