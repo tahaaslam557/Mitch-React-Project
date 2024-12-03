@@ -3,7 +3,7 @@ import React from "react";
 import Home from "./Components/Frontend/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Signup from "./Components/Frontend/Singup";
+import Singup from "./Components/Frontend/Singup";
 import Signin from "./Components/Frontend/Signin";
 import "../public/assets/style.scss";
 import Otp from "./Components/Frontend/Otp";
@@ -22,29 +22,27 @@ import Account from "./Components/Frontend/Account";
 
 export default function App() {
   return (
-    <>
-      <BrowserRouter basename="/Mitch-React-Project">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/signin" element={<Signin />} />
-          <Route path="/otp" element={<Otp />} />
-          <Route path="/otp-verified" element={<Verification />} />
-          <Route path="/subplans" element={<Subscriptionplan />} />
-          <Route path="/payment" element={<Payment />} />
-          <Route path="/stripe-card" element={<Add_Stripe_card />} />
-          <Route path="/payment-confirm" element={<Payment_confirm />} />
-          <Route path="/payment-success" element={<Payment_successfull />} />
-          <Route path="/login-inner" element={<Login_inner />} />
-          <Route path="/preview" element={<Storypreview />} />
-          <Route path="/generated" element={<Generated />} />
-          <Route path="/history" element={<History />} />
-          <Route path="/tips" element={<User_Tips />} />
-          <Route path="/account" element={<Account />} />
-          {/* 404 Route */}
-          <Route path="*" element={<h1>404 - Page Not Found</h1>} />
-        </Routes>
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/signup" element={<Singup />} />
+        <Route path="/signin" element={<Signin />} />
+        <Route path="/otp" element={<Otp />} />
+        <Route path="/otp-verified" element={<Verification />} />
+        <Route path="/subplans" element={<Subscriptionplan />} />
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/stripe-card" element={<Add_Stripe_card />} />
+        <Route path="/payment-confirm" element={<Payment_confirm />} />
+        <Route path="/payment-success" element={<Payment_successfull />} />
+        <Route path="/login-inner" element={<Login_inner />} />
+        <Route path="/preview" element={<Storypreview />} />
+        <Route path="/generated" element={<Generated />} />
+        <Route path="/history" element={<History />} />
+        <Route path="/tips" element={<User_Tips />} />
+        <Route path="/account" element={<Account />} />
+        {/* 404 Route */}
+        <Route path="*" element={<h1>404 - Page Not Found</h1>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
