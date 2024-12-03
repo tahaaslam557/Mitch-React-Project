@@ -23,7 +23,7 @@ import Account from "./Components/Frontend/Account";
 export default function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/Mitch-React-Project">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<Signup />} />
