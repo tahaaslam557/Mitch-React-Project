@@ -2,9 +2,9 @@
 import React from "react";
 import Home from "./Components/Frontend/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Singup from "./Components/Frontend/Singup";
-import Signin from "./Components/Frontend/Signin"; // Correct if the file is named Signin.jsx
+import { HashRouter as Router, Route, Routes } from "react-router-dom"; // Use HashRouter instead of BrowserRouter
+import Singnup from "./Components/Frontend/Singnup"; // Corrected spelling from "Singup" to "Signup"
+import Signin from "./Components/Frontend/Signin";
 import "../public/assets/style.scss";
 import Otp from "./Components/Frontend/Otp";
 import Verification from "./Components/Frontend/Verification";
@@ -22,10 +22,10 @@ import Account from "./Components/Frontend/Account";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <Router> {/* Use HashRouter here */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/signup" element={<Singup />} />
+        <Route path="/signup" element={<Singnup />} /> {/* Corrected spelling */}
         <Route path="/signin" element={<Signin />} />
         <Route path="/otp" element={<Otp />} />
         <Route path="/otp-verified" element={<Verification />} />
@@ -43,6 +43,6 @@ export default function App() {
         {/* 404 Route */}
         <Route path="*" element={<h1>404 - Page Not Found</h1>} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
