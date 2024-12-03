@@ -4,7 +4,7 @@ import Home from "./Components/Frontend/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Singup from "./Components/Frontend/Singup";
-import Signin from "./Components/Frontend/Signin";
+import Signin from "./Components/Frontend/Signin"; // Correct if the file is named Signin.jsx
 import "../public/assets/style.scss";
 import Otp from "./Components/Frontend/Otp";
 import Verification from "./Components/Frontend/Verification";
