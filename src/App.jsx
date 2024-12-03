@@ -18,6 +18,7 @@ import Storypreview from './Components/Frontend/Storypreview'
 import Generated from './Components/Frontend/Generated'
 import History from "./Components/Frontend/History";
 import User_Tips from './Components/Frontend/User_Tips'
+import Account from './Components/Frontend/Account'
 
 
 export default function App() {
@@ -40,6 +41,7 @@ export default function App() {
         <Route path="/generated" element={<Generated/>}/>
         <Route path="/history" element={<History />} />
         <Route path="/tips" element={<User_Tips />} />
+        <Route path="/account" element={<Account />} />
          {/* 404 Route */}
          <Route path="*" element={<h1>404 - Page Not Found</h1>} />
     </Routes>

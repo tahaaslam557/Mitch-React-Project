@@ -54,7 +54,7 @@ function Payment_confirm() {
                         type="radio"
                         name=""
                         id=""
-                        className="radio-inpur"
+                        className="radio-input"
                       />
                     </div>
                   </div>

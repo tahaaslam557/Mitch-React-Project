@@ -1715,22 +1715,15 @@ img {
       margin-left: -10px;
     }
 
-    .radio-inpur {
+    .radio-input {
       appearance: none;
-      /* Remove default styling */
       width: 20px;
-      /* Adjust size */
       height: 20px;
       border: 2px solid #FDE63E;
-      /* Yellow border */
       border-radius: 50%;
-      /* Makes it circular */
       background-color: transparent;
-      /* Transparent center */
       outline: none;
-      /* Removes focus outline */
       cursor: pointer;
-      /* Pointer cursor on hover */
       position: relative;
       top: -10px;
     }
@@ -3293,5 +3286,361 @@ img {
         display: block;
       }
     }
+  }
+}
+
+
+/*..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X..... Account page CSS style..X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....X.....*/
+
+
+.account-section {
+  padding: 0;
+  box-sizing: none;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  .hero-account {
+    padding: 20px 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+      url("../assets/image/Hero.png");
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-account {
+    margin: 0 40px 0;
+    width: 95%;
+    height: 785px;
+    padding: 30px 33px;
+    border-radius: 33px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    // margin-left: 20rem;
+  }
+
+  h1 {
+    text-align: center;
+    font-family: $font-family;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 66px;
+    text-transform: uppercase;
+    color: $primary-color;
+    text-shadow: 0 4px 4px rgba(253, 230, 62, 0.5);
+  }
+
+  h3 {
+    text-transform: capitalize;
+    color: $primary-color;
+    text-shadow: 0 4px 4px rgba(253, 230, 62, 0.5);
+    font-family: $btn-family;
+  }
+
+  .account {
+    // gap: 20px;
+    padding: 10px;
+    flex-wrap: nowrap;
+    // margin: 20px 10px;
+  }
+
+  .gen {
+    width: 100%;
+    height: 266px;
+    border: 1px solid #bc6c25;
+    border-radius: 20px;
+    padding: 20px 12px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(188, 108, 37, 0.12);
+    backdrop-filter: blur(10px);
+    // justify-content: space-between; // Distribute space between items
+    .profile-jhon {
+      display: flex;
+      flex-direction: row;
+    }
+    .account-profile {
+      vertical-align: middle;
+      h3 {
+        color: #4d4d4d;
+        font-family: $btn-family;
+        font-size: 33px;
+        font-weight: 400;
+        line-height: 42px;
+      }
+
+      svg {
+        margin-right: 10px;
+      }
+    }
+
+    hr {
+      width: 100%;
+    }
+    .col-md-6 {
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .mail_num {
+      margin-top: 50px;
+      padding: 0 20px;
+      p {
+        font-size: 18px;
+        font-family: $btn-family;
+        text-transform: capitalize;
+        line-height: 23px;
+        color: #4d4d4d;
+        font-weight: 400;
+      }
+    }
+
+    .btn-account {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      align-self: self-end;
+      font-family: $btn-family;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+      text-transform: capitalize;
+      background-color: #ffffff1a;
+      color: #bc6c25;
+      padding: 12px 20px;
+      border: 1.5px solid rgba(188, 108, 37, 1);
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+
+  .gen1 {
+    width: 100%;
+    height: auto;
+    border: 1px solid #bc6c25;
+    border-radius: 20px;
+    padding: 18px 12px;
+    display: flex;
+    background-color: rgba(188, 108, 37, 0.12);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+
+    .basic-account {
+      .para {
+        font-size: 16px;
+        font-weight: 600;
+        color: #4d4d4d;
+
+        p {
+          margin: 0;
+          text-align: right;
+          font-size: 18px;
+          font-family: $btn-family;
+          font-weight: 400;
+          line-height: 23px;
+          color: #4d4d4d;
+        }
+
+        span {
+          font-family: $btn-family;
+          font-weight: 700;
+          color: #4d4d4d; // Price color
+          font-size: 30px;
+          text-align: right;
+          line-height: 24px;
+        }
+      }
+      h3 {
+        font-family: $btn-family;
+        font-size: 22px;
+        font-weight: 700;
+        color: $primary-color;
+      }
+    }
+
+    .btn-1 {
+      width: 100%;
+      font-family: $btn-1-family;
+      font-weight: 700;
+      size: 20px;
+      line-height: 26px;
+      text-align: center;
+      background-color: white;
+      color: #bc6c25;
+      padding: 7px 10px;
+      border: 1.5px solid #bc6c25;
+      border-radius: 12px;
+      // margin-top: 85px;
+      text-transform: capitalize;
+      &:hover {
+        background-color: #bc6c25;
+        border-color: #bc6c25;
+        color: #fff;
+      }
+    }
+
+    .pay-select {
+      background-color: #ffeddc;
+      margin-bottom: 40px;
+      border: 1.5px solid $primary-color;
+      height: 80px;
+      margin-top: 30px;
+      padding: 40px 0;
+      border-radius: 10px;
+
+      img {
+        display: flex;
+        justify-content: center;
+        // width: 85px;
+        height: 65px;
+        margin-top: -34px;
+        margin-left: 10px;
+      }
+
+      h6 {
+        font-family: $btn-family;
+        text-transform: capitalize;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        // color: $text-white;
+        color: #4d4d4d;
+        margin-top: -28px;
+        margin-left: -50px;
+      }
+
+      .radio-input {
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 5px solid #bc6c25;
+        border-radius: 50%;
+        background-color: transparent;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        top: -10px;
+      }
+
+      .radio-inpur:checked::before {
+        content: "";
+        display: block;
+        width: 50%;
+        /* Inner circle size */
+        height: 50%;
+        background-color: #bc6c25;
+        /* Transparent center */
+        border-radius: 50%;
+        /* Inner circle is circular */
+        margin: auto;
+        /* Center the inner circle */
+        position: relative;
+        top: 04px;
+      }
+    }
+  }
+
+  .btn-2 {
+    width: 100%;
+    font-family: $btn-1-family;
+    font-weight: 700;
+    size: 20px;
+    line-height: 26px;
+    text-align: center;
+    background-color: $primary-color;
+    color: $text-white;
+    padding: 12px 100px;
+    border: 1.5px solid #bc6c25;
+    border-radius: 12px;
+    margin-top: 290px;
+    text-transform: capitalize;
+    &:hover {
+      background-color: #3d1c0054;
+      border-color: #bc6c25;
+      color: #fff;
+    }
+  }
+
+  .account-buttons-container {
+    display: flex;
+    gap: 16px; /* Adjusts the spacing between buttons */
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0; /* Top and bottom margin */
+    padding: 20px;
+    background-color: #ffffff33; /* Semi-transparent dark background */
+    border-radius: 30px; /* Rounded container corners */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+    backdrop-filter: blur(12px); /* Stronger blur effect */
+    width: 90%; /* Adjusted width to fit the content */
+    max-width: 500px;
+  }
+  
+  .create-btn {
+    position: relative;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    overflow: hidden;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    width: 100px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    background-color: #3d1c0054; /* Example background */
+    border: 1px solid #bc6c25;
+    border-radius: 33px; /* Fully rounded corners */
+    cursor: pointer;
+    overflow: hidden;
+    color: white;
+
+    svg {
+      width: 20px; /* Set a fixed width */
+      height: 20px; /* Set a fixed height */
+      transition: transform 0.3s ease;
+      position: absolute; /* Keeps SVG centered */
+    }
+
+    .hidden-text {
+      opacity: 0;
+      transform: translateX(100%); /* Start off-screen to the right */
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      white-space: nowrap; /* Prevents text from wrapping */
+      margin-left: 8px;
+    }
+
+    &:hover {
+      .hidden-text {
+        opacity: 1;
+        transform: translateX(0); /* Slide in from the right */
+      }
+
+      svg {
+        transform: translateX(-30px); /* Move icon to the right */
+      }
+    }
+  }
+
+  .account-btn {
+    background-color: #fff; // White background
+    border: 1.5px solid #bc6c25; // Dark border for contrast
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #bc6c25; // Text color
+    transition: background-color 0.3s ease;
   }
 }
