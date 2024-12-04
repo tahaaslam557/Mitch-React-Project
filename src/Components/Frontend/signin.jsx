@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 
-function Signin() {
+const Signin = () => {
   const navigate = useNavigate();
   const [passwordVisible, setPasswordVisible] = useState(false);
   const [rememberMe, setRememberMe] = useState(false);
@@ -39,7 +39,6 @@ function Signin() {
               <h1 className="log-pg">Login</h1>
 
               {/* Email Input */}
-              {/* Email Input */}
               <div className="input-group">
                 <div className="input-container">
                   <label htmlFor="email" className="input-label">
@@ -55,6 +54,7 @@ function Signin() {
                 </div>
               </div>
 
+              {/* Password Input */}
               <div className="input-group">
                 <div className="input-container">
                   <label htmlFor="password" className="input-label">
@@ -74,6 +74,7 @@ function Signin() {
                   />
                 </div>
               </div>
+
               {/* Remember Me and Forgot Password Section */}
               <div className="row">
                 {/* Remember Me Section (Left) */}
@@ -106,8 +107,11 @@ function Signin() {
 
               {/* Submit Button */}
               <div className="col-lg-12 col-md-12 col-sm-12">
-                <button className="btn-1" onClick={() => navigate("/login-inner")}>
-                  login
+                <button
+                  className="btn-1"
+                  onClick={() => navigate("/login-inner")}
+                >
+                  Login
                 </button>
               </div>
 
@@ -123,6 +127,6 @@ function Signin() {
       </section>
     </>
   );
-}
+};
 
 export default Signin;
